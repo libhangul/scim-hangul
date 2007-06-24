@@ -1,0 +1,52 @@
+# translation of skim-scim-hangul.po to Punjabi
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
+# Amanpreet Singh Brar <amanpreetalam@yahoo.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: skim-scim-hangul\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-03-23 18:01+0000\n"
+"PO-Revision-Date: 2005-09-07 11:45+0530\n"
+"Last-Translator: Amanpreet Singh Brar <amanpreetalam@yahoo.com>\n"
+"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../setupui/scim_hangul_ui.cpp:124
+msgid "Options"
+msgstr "ਚੋਣ"
+
+#: ../setupui/scim_hangul_ui.cpp:125
+msgid "Use &Capslock"
+msgstr "ਕੈਪ-ਲਾਕ ਵਰਤੋਂ(&C)"
+
+#: ../setupui/scim_hangul_ui.cpp:126
+msgid "Use &Dvorak keyboard"
+msgstr "ਡਵੋਰਕ ਕੀ-ਬੋਰਡ ਵਰਤੋਂ(&D) "
+
+#: ../setupui/scim_hangul_ui.cpp:127
+msgid "&Show candidate comment"
+msgstr "ਉਮੀਦਵਾਰ ਝਰੋਖਾ ਵੇਖਾਓ(&S)"
+
+#: ../setupui/scim_hangul_ui.cpp:128
+msgid "Keyboard"
+msgstr "ਕੀ-ਬੋਰਡ"
+
+#: ../setupui/scim_hangul_ui.cpp:129
+msgid "Trigger Keys:"
+msgstr "ਤਬਦੀਲ ਸਵਿੱਚਾਂ:"
+
+#: ../setupui/scim_hangul_ui.cpp:130
+msgid "Hangul to Hanja keys:"
+msgstr "ਹੁੰਗਲ ਤੋਂ ਹੁੰਜਾ ਸਵਿੱਚਾਂ:"
+
+#: ../setupui/scim_hangul_ui.cpp:131
+msgid "Manual mode keys:"
+msgstr "ਦਸਤੀ ਢੰਗ ਸਵਿੱਚਾਂ:"
+

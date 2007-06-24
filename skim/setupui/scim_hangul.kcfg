@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kcfg SYSTEM "http://www.kde.org/standards/kcfg/1.0/kcfg.dtd">
+<kcfg>
+  <kcfgfile name="skimrc"/>
+  <group name="SCIM">
+    <entry name="_IMEngine_Hangul_ShowCandidateComment" key="/IMEngine/Hangul/ShowCandidateComment" type="Bool">
+      <label>Whether to show the comment of candidates or not.</label>
+      <default>true</default>
+    </entry>
+    <entry name="_IMEngine_Hangul_UseAsciiMode" key="/IMEngine/Hangul/UseAsciiMode" type="Bool">
+      <label>Whether to enable to change the input mode between hangul and ascii mode.</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Hangul_CommitByWord" key="/IMEngine/Hangul/ShowCandidateComment" type="Bool">
+      <label>Whether not to commit until any non-hangul character is inputed.</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Hangul_KeyboardLayout" key="/IMEngine/Hangul/KeyboardLayout" type="String">
+      <label>Hangul keyboard layout</label>
+      <default>2</default>
+    </entry>
+    <entry name="_IMEngine_Hangul_HangulKey" key="/IMEngine/Hangul/HangulKey" type="String">
+      <label>The key events to change input mode between hangul and ascii.</label>
+      <default>Hangul,Shift+space</default>
+    </entry>
+    <entry name="_IMEngine_Hangul_HangulHanjaKey" key="/IMEngine/Hangul/HanjaKey" type="String">
+      <label>The key events to convert Hangul to Hanja character.</label>
+      <default>Hangul_Hanja,F9</default>
+    </entry>
+    <entry name="_IMEngine_Hangul_HanjaModeKey" key="/IMEngine/Hangul/HanjaModeKey" type="String">
+      <label>The key events to toggle Hanja mode.</label>
+      <default></default>
+    </entry>
+  </group>
+</kcfg>

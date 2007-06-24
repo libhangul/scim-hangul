@@ -1,0 +1,12 @@
+*.la
+scim_hangul.cpp
+scim_hangul.h
+*.lo
+scim_hangul_ui.cpp
+scim_hangul_ui.h
+*.moc
+.deps
+.libs
+Makefile
+Makefile.in
+

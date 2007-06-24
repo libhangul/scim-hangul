@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-03-23 18:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../setupui/scim_hangul_ui.cpp:124
+msgid "Options"
+msgstr ""
+
+#: ../setupui/scim_hangul_ui.cpp:125
+msgid "Use &Capslock"
+msgstr ""
+
+#: ../setupui/scim_hangul_ui.cpp:126
+msgid "Use &Dvorak keyboard"
+msgstr ""
+
+#: ../setupui/scim_hangul_ui.cpp:127
+msgid "&Show candidate comment"
+msgstr ""
+
+#: ../setupui/scim_hangul_ui.cpp:128
+msgid "Keyboard"
+msgstr ""
+
+#: ../setupui/scim_hangul_ui.cpp:129
+msgid "Trigger Keys:"
+msgstr ""
+
+#: ../setupui/scim_hangul_ui.cpp:130
+msgid "Hangul to Hanja keys:"
+msgstr ""
+
+#: ../setupui/scim_hangul_ui.cpp:131
+msgid "Manual mode keys:"
+msgstr ""

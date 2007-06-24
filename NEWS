@@ -1,0 +1,23 @@
+scim-hangul 0.3.1
+    * Updated for libhangul 0.0.4
+    * Fixed some small bugs
+
+scim-hangul 0.3.0
+    * Use libhangul
+    * Merge all IM engines into one
+    * Added New hanja mode
+
+scim-hangul 0.2.2
+    * Fixed 3 beolsik keypad problem
+    * Fixed capslock problem
+    * Fixed installation problem on KDE
+    * Changed dvorak behavior ( see http://sourceforge.net/tracker/index.php?func=detail&aid=1425895&group_id=108454&atid=650539 )
+
+scim-hangul 0.2.1
+    * 3 boelsik input method logic bug fixes
+    * Support skim
+    * Support keyboard layout config
+    * Remove unused options
+    * Update translations
+
+scim-hangul 0.2.0

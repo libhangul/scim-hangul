@@ -1,0 +1,254 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>ScimHangulSetting</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ScimHangulSetting</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>428</width>
+            <height>409</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>ScimHangulSetting</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string>Options</string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>kcfg__IMEngine_Hangul_ShowCandidateComment</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Show c&amp;andidate comment</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+A</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>kcfg__IMEngine_Hangul_UseAsciiMode</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Use ascii input mode</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+U</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>kcfg__IMEngine_Hangul_CommitByWord</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Commit by word</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox2</cstring>
+            </property>
+            <property name="title">
+                <string>Keyboard</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="KLineEdit" row="3" column="1">
+                    <property name="name">
+                        <cstring>kcfg_IMEngine_Hangul_HanjaModeKey</cstring>
+                    </property>
+                </widget>
+                <widget class="SkimEditShortcutButton" row="3" column="2">
+                    <property name="name">
+                        <cstring>skimEditShortcutButton3</cstring>
+                    </property>
+                </widget>
+                <widget class="SkimEditShortcutButton" row="2" column="2">
+                    <property name="name">
+                        <cstring>skimEditShortcutButton2</cstring>
+                    </property>
+                </widget>
+                <widget class="KLineEdit" row="2" column="1">
+                    <property name="name">
+                        <cstring>kcfg__IMEngine_Hangul_HangulHanjaKey</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="0">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Hangul to Hanja keys:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>textLabel2_2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Hangul keys:</string>
+                    </property>
+                </widget>
+                <widget class="KLineEdit" row="1" column="1">
+                    <property name="name">
+                        <cstring>kcfg__IMEngine_Hangul_HangulKey</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel4</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Keyboard layout:</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="1">
+                    <item>
+                        <property name="text">
+                            <string>2bul</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>3bul 2bu-shifted</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>3bul Final</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>3bul 390</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>3bul No-shift</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>3bul Yetgeul</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>kcfg__IMEngine_Hangul_KeyboardLayout</cstring>
+                    </property>
+                </widget>
+                <widget class="SkimEditShortcutButton" row="1" column="2">
+                    <property name="name">
+                        <cstring>skimEditShortcutButton2_2</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel5</cstring>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="3" column="0">
+                    <property name="name">
+                        <cstring>textLabel3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Hanja mode keys:</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>111</height>
+                </size>
+            </property>
+        </spacer>
+    </vbox>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>SkimEditShortcutButton</class>
+        <header location="local">skimkeygrabber.h</header>
+        <sizehint>
+            <width>24</width>
+            <height>24</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>1</hordata>
+            <verdata>1</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>setEditorText(const QString &amp;)</signal>
+        <slot access="public" specifier="">slot()</slot>
+        <slot access="public" specifier="">setShortcuts(const QString &amp;)</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>skimEditShortcutButton2</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Hangul_HangulHanjaKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Hangul_HangulHanjaKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>skimEditShortcutButton2</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>klineedit.h</includehint>
+    <includehint>skimeditshortcutbutton.h</includehint>
+    <includehint>skimeditshortcutbutton.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>skimeditshortcutbutton.h</includehint>
+</includehints>
+</UI>

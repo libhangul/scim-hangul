@@ -1,0 +1,221 @@
+# translation of scim-hangul to Japanese
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 James Su <suzhe@tsinghua.org.cn>.
+msgid ""
+msgstr ""
+"Project-Id-Version: hangul\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-07 01:09+0900\n"
+"PO-Revision-Date: 2005-03-01 20:00+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/scim_hangul_imengine.cpp:118 src/scim_hangul_imengine.cpp:894
+#: src/scim_hangul_imengine_setup.cpp:298
+msgid "2bul"
+msgstr "2bul"
+
+#: src/scim_hangul_imengine.cpp:119 src/scim_hangul_imengine.cpp:896
+#: src/scim_hangul_imengine_setup.cpp:299
+msgid "3bul 2bul-shifted"
+msgstr "3bul 2bul-shifted"
+
+#: src/scim_hangul_imengine.cpp:120 src/scim_hangul_imengine.cpp:898
+#: src/scim_hangul_imengine_setup.cpp:300
+msgid "3bul Final"
+msgstr "3bul Final"
+
+#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:900
+#: src/scim_hangul_imengine_setup.cpp:301
+msgid "3bul 390"
+msgstr "3bul 390"
+
+#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:902
+#: src/scim_hangul_imengine_setup.cpp:302
+msgid "3bul No-Shift"
+msgstr "3bul No-Shift"
+
+#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:904
+#: src/scim_hangul_imengine_setup.cpp:303
+msgid "3bul Yetgeul"
+msgstr "3bul Yetgeul"
+
+#: src/scim_hangul_imengine.cpp:146
+msgid "Korean"
+msgstr ""
+
+#: src/scim_hangul_imengine.cpp:178
+msgid "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
+msgstr ""
+
+#: src/scim_hangul_imengine.cpp:191
+msgid "Key bindings:\n"
+msgstr ""
+
+#: src/scim_hangul_imengine.cpp:202
+#, c-format
+msgid ""
+"  Hangul key: %s\n"
+"    This key binding is to switch the input mode between the ASCII input \n"
+"    mode and the hangul input mode.\n"
+msgstr ""
+
+#: src/scim_hangul_imengine.cpp:206
+#, c-format
+msgid ""
+"  Hanja key: %s\n"
+"    This key binding is to convert a hangul character to a hanja character.\n"
+msgstr ""
+
+#: src/scim_hangul_imengine_setup.cpp:111
+msgid "Hangul"
+msgstr "ハングル"
+
+#: src/scim_hangul_imengine_setup.cpp:116
+msgid "A Hangul IMEngine Module."
+msgstr "ハングルIMEngineモジュール"
+
+#: src/scim_hangul_imengine_setup.cpp:160
+#, fuzzy
+msgid "Hangul keys:"
+msgstr "漢字(Hanja)変換キー："
+
+#: src/scim_hangul_imengine_setup.cpp:162
+#, fuzzy
+msgid "Select Hangul keys"
+msgstr "漢字(Hanja)変換キーの設定"
+
+#: src/scim_hangul_imengine_setup.cpp:164
+#, fuzzy
+msgid ""
+"The key events to change input mode between hangul and ascii.Click on the "
+"button on the right to edit it."
+msgstr ""
+"ハングル入力モードと直接入力モードを切替えるキー。\n"
+"変更する場合は右のボタンをクリックして下さい。"
+
+#: src/scim_hangul_imengine_setup.cpp:178
+msgid "Hangul to Hanja keys:"
+msgstr "漢字(Hanja)変換キー："
+
+#: src/scim_hangul_imengine_setup.cpp:180
+msgid "Select Hangul to Hanja keys"
+msgstr "漢字(Hanja)変換キーの設定"
+
+#: src/scim_hangul_imengine_setup.cpp:182
+msgid ""
+"The key events to convert Hangul to Hanja character. Click on the button on "
+"the right to edit it."
+msgstr ""
+"ハングルを漢字(Hanja)に変換するキー。変更する\n"
+"場合は右のボタンをクリックして下さい。"
+
+#: src/scim_hangul_imengine_setup.cpp:196
+#, fuzzy
+msgid "Hanja mode keys:"
+msgstr "マニュアルモードキー:"
+
+#: src/scim_hangul_imengine_setup.cpp:198
+#, fuzzy
+msgid "Select a key to toggle hanja mode keys"
+msgstr "マニュアルモードキーの設定"
+
+#: src/scim_hangul_imengine_setup.cpp:200
+#, fuzzy
+msgid ""
+"The key events to toggle Hanja mode. Click on the button on the right to "
+"edit it."
+msgstr ""
+"マニュアルモードをオン/オフするキー。変更する\n"
+"場合は右のボタンをクリックして下さい。"
+
+#: src/scim_hangul_imengine_setup.cpp:244
+#, fuzzy
+msgid "_Use ascii input mode"
+msgstr "直接入力モード"
+
+#: src/scim_hangul_imengine_setup.cpp:247
+msgid ""
+"Whether to enable to change the input mode between hangul and ascii mode."
+msgstr ""
+
+#: src/scim_hangul_imengine_setup.cpp:253
+msgid "_Show candidate comment"
+msgstr "候補に注釈を表示(_S)"
+
+#: src/scim_hangul_imengine_setup.cpp:256
+msgid "Whether to show the comment of candidates or not."
+msgstr "候補に注釈を表示するかどうか"
+
+#: src/scim_hangul_imengine_setup.cpp:261
+msgid "_Commit by word"
+msgstr ""
+
+#: src/scim_hangul_imengine_setup.cpp:264
+msgid "Whether not to commit until any non-hangul character is inputed."
+msgstr ""
+
+#: src/scim_hangul_imengine_setup.cpp:284
+msgid "<span weight=\"bold\">Keyboard layout</span>"
+msgstr ""
+
+#: src/scim_hangul_imengine_setup.cpp:313
+msgid "<span weight=\"bold\">Key bindings</span>"
+msgstr ""
+
+#: src/scim_hangul_imengine_setup.cpp:379
+msgid "Keyboard"
+msgstr "キーボード"
+
+#: src/scim_hangul_imengine_setup.cpp:384
+msgid "Options"
+msgstr "オプション"
+
+#~ msgid "Use _Dvorak keyboard"
+#~ msgstr "ドボラックキーボードを使用する(_D)"
+
+#~ msgid "Whether to use dvorak keyboard or not."
+#~ msgstr "ドボラックキーボードを使用するかどうか"
+
+#~ msgid "Output Mode: "
+#~ msgstr "出力モード:"
+
+#~ msgid "J"
+#~ msgstr "J"
+
+#~ msgid "Jamo"
+#~ msgstr "字母(Jamo)"
+
+#~ msgid "+"
+#~ msgstr "+"
+
+#~ msgid "E"
+#~ msgstr "E"
+
+#~ msgid "S"
+#~ msgstr "S"
+
+#~ msgid "Syllable"
+#~ msgstr "音節"
+
+#~ msgid "A Hangul IMEngine Module which is ported from imhangul project."
+#~ msgstr "imhangulプロジェクトに基づくハングルIMエンジンモジュール"
+
+#~ msgid "Trigger keys:"
+#~ msgstr "開始キー:"
+
+#~ msgid "Select trigger keys"
+#~ msgstr "開始キーの設定"
+
+#~ msgid "Use _CapsLock"
+#~ msgstr "CapsLockを使用する(_C)"
+
+#~ msgid ""
+#~ "Whether to use Caps Lock key for changing hangul output mode to Jamo or "
+#~ "not."
+#~ msgstr ""
+#~ "CapsLockキーでハングル出力モードから\n"
+#~ "字母(Jamo)出力モードに切替えるかどうか"

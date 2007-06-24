@@ -1,0 +1,83 @@
+# translation of nl.po to Nederlands
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 James Su <suzhe@tsinghua.org.cn>.
+#
+# Ronald Stroethoff <stroet43@zonnet.nl>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: nl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-30 20:03+0900\n"
+"PO-Revision-Date: 2007-05-20 12:49+0200\n"
+"Last-Translator: Ronald Stroethoff <stroet43@zonnet.nl>\n"
+"Language-Team: Nederlands\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: src/scim_hangul_imengine.cpp:75
+msgid "2bul"
+msgstr "2bul"
+
+#: src/scim_hangul_imengine.cpp:80
+msgid "3bul 2bul-shifted"
+msgstr "3bul (2bul met omschakeltoets)"
+
+#: src/scim_hangul_imengine.cpp:85
+msgid "3bul 390"
+msgstr "3bul 390"
+
+#: src/scim_hangul_imengine.cpp:90
+msgid "3bul Final"
+msgstr "3bul eind versie"
+
+#: src/scim_hangul_imengine.cpp:95
+msgid "3bul No-Shift"
+msgstr "3bul zonder omschakeltoets"
+
+#: src/scim_hangul_imengine.cpp:100
+msgid "3bul Yetgeul"
+msgstr "3bul traditioneel"
+
+#: src/scim_hangul_imengine_setup.cpp:101
+msgid "Hangul"
+msgstr "Hangul"
+
+#: src/scim_hangul_imengine_setup.cpp:106
+msgid "A Hangul IMEngine Module."
+msgstr "Een invoer methode voor Hangul."
+
+#: src/scim_hangul_imengine_setup.cpp:151
+msgid "Hangul to Hanja keys:"
+msgstr "Hangul naar Hanja:"
+
+#: src/scim_hangul_imengine_setup.cpp:153
+msgid "Select Hangul to Hanja keys"
+msgstr "Kies de sneltoets, om van Hangul naar Hanja om te zetten"
+
+#: src/scim_hangul_imengine_setup.cpp:155
+msgid ""
+"The key events to convert Hangul to Hanja character. Click on the button on "
+"the right to edit it."
+msgstr ""
+"De toetscombinatie, waarmee de Hangul-tekens in Hanja (Chinese "
+"karakters) omgezet worden. Klik om te veranderen op de rechter muisknop."
+
+#: src/scim_hangul_imengine_setup.cpp:215
+msgid "_Show candidate comment"
+msgstr "_Toon commentaar over de kandidaten"
+
+#: src/scim_hangul_imengine_setup.cpp:227
+msgid "Whether to show the comment of candidates or not."
+msgstr "Wanneer deze optie is gekozen, wordt commentaar over de kandiaten getoond."
+
+#: src/scim_hangul_imengine_setup.cpp:307
+msgid "Options"
+msgstr "Optie's"
+
+#: src/scim_hangul_imengine_setup.cpp:315
+msgid "Keyboard"
+msgstr "toetsenbord"
+

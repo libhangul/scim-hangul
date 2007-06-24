@@ -1,0 +1,51 @@
+# translation of nl.po to Nederlands
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Ronald Stroethoff <stroet43@zonnet.nl>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: nl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-03-23 18:01+0000\n"
+"PO-Revision-Date: 2007-05-20 11:48+0200\n"
+"Last-Translator: Ronald Stroethoff <stroet43@zonnet.nl>\n"
+"Language-Team: Nederlands\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../setupui/scim_hangul_ui.cpp:124
+msgid "Options"
+msgstr "Optie's"
+
+#: ../setupui/scim_hangul_ui.cpp:125
+msgid "Use &Capslock"
+msgstr "&Capslock gebruiken"
+
+#: ../setupui/scim_hangul_ui.cpp:126
+msgid "Use &Dvorak keyboard"
+msgstr "&Dvorak-toetsenbord gebruiken"
+
+#: ../setupui/scim_hangul_ui.cpp:127
+msgid "&Show candidate comment"
+msgstr "&Toon commentaar over de kandidaten"
+
+#: ../setupui/scim_hangul_ui.cpp:128
+msgid "Keyboard"
+msgstr "toetsenbord"
+
+#: ../setupui/scim_hangul_ui.cpp:129
+msgid "Trigger Keys:"
+msgstr "Inschakelen:"
+
+#: ../setupui/scim_hangul_ui.cpp:130
+msgid "Hangul to Hanja keys:"
+msgstr "Omzetten van Hangul naar Hanja:"
+
+#: ../setupui/scim_hangul_ui.cpp:131
+msgid "Manual mode keys:"
+msgstr "Manuel modus:"
+

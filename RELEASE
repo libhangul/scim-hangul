@@ -1,0 +1,40 @@
+Follow this instructions to make new release.
+
+* Update po files and pot file
+  $ cd po
+  $ make update-po
+
+* Update documents
+
+* Update the version string in configure.ac
+
+* Update autotools scripts and Makefiles and then run bootstrap in skim dir.
+  Note: You should run skim/bootstrap after update autotools files, because
+  KDE files will not be installed if you ommit this process.
+
+* Commit all changes to CVS
+
+* Update changelog (cvs2cl will automatically regenerate it)
+  $ make changelog
+
+* Commit all changes to CVS
+
+* Make tag for new release in CVS repository.
+  $ cvs tag scim_hangul_x_x_x
+
+* Create tarball.
+  $ make dist
+
+* Do build and install test. Check whether skim config tools are installed.
+  Note: make distcheck will not work
+  $ untar the newly created tarball package.
+  $ run configure and make
+  $ DESTDIR=$PWD/tmp make install
+
+* Upload to sourceforge.net: http://sourceforge.net/projects/scim
+  and make new file release scim-hangul on sf.net.
+
+* Write news in sf.net.
+
+* Inform to mailing list and package maintainers of distributions.
+  scim users and developers, gentoo, debian, fedora, etc.

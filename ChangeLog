@@ -1,0 +1,828 @@
+2007-01-06 16:23  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* configure.ac (1.12):
+
+	prepare to release 0.3.1
+
+2007-01-06 16:11  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* po/: de.po (1.10), fr.po (1.10), ja.po (1.10), ko.po (1.9), pa.po
+	(1.5), scim-hangul.pot (1.7), zh_CN.po (1.9):
+
+	update po files
+
+2007-01-06 16:08  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* ChangeLog (1.6), NEWS (1.6):
+
+	update documents
+
+2007-01-06 14:00  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* configure.ac (1.11), src/scim_hangul_imengine.cpp (1.32):
+
+	update for libhangul 0.0.4
+
+2006-12-02 04:25  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.31):
+
+	fix backspace problem in hanja mode
+
+2006-12-02 02:27  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.30), scim_hangul_imengine.h
+	(1.16):
+
+	apply new keyboard selection functions of libhangul
+
+2006-11-13 15:11  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.29):
+
+	ignore capslock and numlock on comparing keyevents
+
+2006-11-04 04:47  tag scim_hangul_0_3_0
+
+2006-11-04 04:47  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* ChangeLog (1.5):
+
+	update ChangeLog
+
+2006-11-04 04:37  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* configure.ac (1.10), skim/configure.in.in (1.6):
+
+	update version information
+
+2006-11-04 04:32  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* po/: de.po (1.9), fr.po (1.9), ja.po (1.9), ko.po (1.8), pa.po
+	(1.4), scim-hangul.pot (1.6), zh_CN.po (1.8):
+
+	update po files
+
+2006-11-04 04:26  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* ChangeLog (1.4):
+
+	update ChangeLog
+
+2006-11-04 04:23  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* NEWS (1.5), README (1.3), README.ko (1.1):
+
+	update documents (add korean README)
+
+2006-11-04 04:20  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.28):
+
+	change property label to fullwidth char.
+
+2006-10-29 12:37  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.27), scim_hangul_imengine.h
+	(1.15):
+
+	update hanja mode implementation.
+
+2006-10-27 16:09  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* skim/setupui/: scim_hangul.kcfg (1.3), scim_hangul_ui.ui (1.4):
+
+	update configuration ui
+
+2006-10-27 07:26  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* po/: de.po (1.8), fr.po (1.8), ja.po (1.8), ko.po (1.7), pa.po
+	(1.3), scim-hangul.pot (1.5), zh_CN.po (1.7):
+
+	update po files
+
+2006-10-27 07:19  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.26):
+
+	update help messages
+
+2006-10-23 13:10  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.25):
+
+	change to ascii mode on ESC key (for vi users)
+
+2006-10-23 12:42  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.24), scim_hangul_imengine.h
+	(1.14), scim_hangul_imengine_setup.cpp (1.8):
+
+	add hanja mode key configuration
+
+2006-10-23 09:28  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.23):
+
+	process all keys in candidate_key_event() when not in hanja mode.
+
+2006-10-22 15:07  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.22):
+
+	implement hanja mode
+
+2006-10-10 07:16  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.21), scim_hangul_imengine.h
+	(1.13), scim_hangul_imengine_setup.cpp (1.7):
+
+	Add 'commit by word' option
+
+2006-10-01 15:42  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.20), scim_hangul_imengine.h
+	(1.12):
+
+	scim_hangul_imengine.cpp,scim_hangul_imengine.h:     * use
+	hanja_table_match_suffix() instead of hanja_table_match().	*
+	use surrounding text to convert hanja word.
+
+2006-10-01 08:58  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.19), scim_hangul_imengine.h
+	(1.11):
+
+	src/scim_hangul_imengine.cpp,src/scim_hangul_imengine.h:     *
+	replace 'reset()' method with 'flush()'
+
+2006-10-01 08:51  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.18):
+
+	src/scim_hangul_imengine.cpp:	  * draw aux string even the
+	candidate does not have any comments.
+
+2006-10-01 08:47  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.17), scim_hangul_imengine.h
+	(1.10):
+
+	Apply hanja code of libhangul
+
+2006-10-01 08:26  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/Makefile.am (1.3), src/candidatetable.h (1.3), src/hangul.h
+	(1.2), src/hangulctype.c (1.2), src/hangulinputcontext.c (1.5),
+	src/hangulkeyboard.h (1.5), src/scim_hangul_imengine.cpp (1.16),
+	src/scim_hangul_imengine.h (1.9), configure.ac (1.9):
+
+	Apply libhangul code.
+
+2006-09-24 05:03  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.15), scim_hangul_imengine.h
+	(1.8), scim_hangul_imengine_setup.cpp (1.6):
+
+	scim_hangul_imengine.cpp,scim_hangul_imengine.h,scim_hangul_imengine_setup.cpp:
+	    * add 'use ascii mode' option
+
+2006-09-24 03:55  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine_setup.cpp (1.5):
+
+	scim_hangul_imengine_setup.cpp:     * update preference widget
+	according to the new config items.
+
+2006-09-24 03:53  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.h (1.7):
+
+	scim_hangul_imengine.h:     * remove unused variables (replace by
+	new HangulInputContext)
+
+2006-09-24 03:52  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.14):
+
+	scim_hangul_imengine.cpp:     * remove config reload signal
+	connection when the factory is destroyed
+
+2006-09-23 13:32  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.13), scim_hangul_imengine.h
+	(1.6):
+
+	scim_hangul_imengine.cpp,scim_hangul_imengine.h:     * add new
+	properties: keyboard layout, hangul mode, hanja mode.	   * rename
+	config items to shorter one.	  * merge several hangul engines
+	into one. now user can change the keyboard	layout by clicking
+	the property button on the palette.	 * add config reload
+	routine.
+
+2006-09-23 10:11  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.12), scim_hangul_imengine.h
+	(1.5):
+
+	scim_hangul_imengine.cpp, scim_hangul_imengine.h:     * change
+	config name HANGUL_HANJA to HANJA     * add config item HANGUL_KEY
+	   * add ascii mode feature(Feature request #1485586)
+
+2006-07-24 15:03  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.11):
+
+	update preedit caret when updating preedit string
+
+2006-07-24 13:42  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.10), scim_hangul_imengine.h
+	(1.4):
+
+	dynamic lookup table keymapping according to the lookup table
+	orientation
+
+2006-07-24 12:29  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.9):
+
+	HangulFactory::get_help(): add help string
+
+2006-03-11 08:27  tag scim_hangul_0_2_2
+
+2006-03-11 08:27  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* ChangeLog (1.3):
+
+	release 0.2.2 update ChangeLog
+
+2006-03-11 08:10  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* NEWS (1.4), RELEASE (1.2):
+
+	update documents
+
+2006-03-11 08:06  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* po/: de.po (1.7), fr.po (1.7), ja.po (1.7), ko.po (1.6), pa.po
+	(1.2), scim-hangul.pot (1.4), zh_CN.po (1.6):
+
+	update po files
+
+2006-03-11 07:07  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: hangulinputcontext.c (1.4), hangulkeyboard.h (1.4):
+
+	work as qwerty for some punctuation mark with dvorak keyboard in
+	2beolsik mode.
+
+2006-02-06 07:46  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/: configure.in.bot (1.1), configure.in.in (1.5),
+	setupui/skimplugin_scim_hangul_config.desktop (1.3):
+
+	updated desktop file to include pa translation added
+	configure.in.bot
+
+2006-02-05 16:02  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* configure.ac (1.8):
+
+	prepare to release 0.2.2
+
+2006-02-05 16:01  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* NEWS (1.3), RELEASE (1.1):
+
+	update documents
+
+2006-02-05 15:17  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.8):
+
+	fixed capslock problem.
+
+2006-02-05 05:41  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.7):
+
+	fixed 3 beol-sik key pad problem.
+
+2006-01-17 02:16  James Su <suzhe@tsinghua.org.cn>
+
+	* COPYING (1.3), src/candidatetable.h (1.2), src/hangulkeyboard.h
+	(1.3), src/scim_hangul_imengine.cpp (1.6),
+	src/scim_hangul_imengine.h (1.3),
+	src/scim_hangul_imengine_setup.cpp (1.4):
+
+	Fix copyright message.
+
+2006-01-13 14:40  James Su <suzhe@tsinghua.org.cn>
+
+	* skim/: Makefile.am (1.3), configure.in.in (1.4):
+
+	Fix skim libdir issue.
+
+2005-11-12 03:59  LiuCougar <liuspider@users.sourceforge.net>
+
+	* configure.ac (1.7), po/pa.po (1.1), skim/po/pa.po (1.1):
+
+	added pa translation, thanks to Amanpreet Singh Alam
+
+2005-11-01 14:46  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* Makefile.am (1.5), src/scim_hangul_imengine.cpp (1.5),
+	src/scim_hangul_imengine_setup.cpp (1.3):
+
+	Make enable to build when HAVE_GETTEXT is not defined.
+
+2005-10-30 15:25  tag scim_hangul_0_2_1
+
+2005-10-30 15:25  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* po/: de.po (1.6), fr.po (1.6), ja.po (1.6), ko.po (1.5),
+	scim-hangul.pot (1.3), zh_CN.po (1.5):
+
+	update pot and po files
+
+2005-10-30 14:34  LiuCougar <liuspider@users.sourceforge.net>
+
+	* configure.ac (1.6), skim/configure.in.in (1.3),
+	skim/setupui/scim_hangul_ui.ui (1.3):
+
+	cleanup
+
+2005-10-30 10:58  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* configure.ac (1.5):
+
+	Prepare for releasing 0.2.1
+
+2005-10-30 10:57  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* NEWS (1.2):
+
+	Add NEWS documents
+
+2005-10-30 10:45  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.4):
+
+	remove unused defines for configs and props
+
+2005-10-30 10:42  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* AUTHORS (1.2), COPYING (1.2), ChangeLog (1.2), README (1.2):
+
+	Update documents. Fix COPYING file (LGPL)
+
+2005-10-30 03:38  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* Makefile.am (1.4), developers (1.1):
+
+	Add update ChangeLog rule with cvs2cl
+
+2005-10-29 15:54  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* configure.ac (1.4), src/Makefile.am (1.2):
+
+	Disable static build.  Add skim support configure option.  Move
+	ENABLE_DEBUG directive to config.h
+
+2005-10-29 14:37  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* skim/setupui/: scim_hangul.kcfg (1.2), scim_hangul.kcfgc (1.2),
+	scim_hangul_ui.ui (1.2), scimhangulsettingloader.cpp (1.2):
+
+	* fix typo: ScimHangualConfig -> ScimHangulConfig.  * remove unused
+	options.
+
+2005-10-29 10:03  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* po/: de.po (1.5), fr.po (1.5), ja.po (1.5), ko.po (1.4),
+	scim-hangul.pot (1.2), zh_CN.po (1.4):
+
+	update po and pot files
+
+2005-10-29 09:53  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: scim_hangul_imengine.cpp (1.3), scim_hangul_imengine.h
+	(1.2), scim_hangul_imengine_setup.cpp (1.2):
+
+	removed dvorak keyboard option, because now, we use map_to_layout
+	feature of SCIM.
+
+2005-10-29 09:27  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/: hangulinputcontext.c (1.3), hangulkeyboard.h (1.2):
+
+	Treat non hangul keys correctly like enter, tab, and symbols. We
+	have to forword such keys to the application.
+
+2005-08-25 14:59  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/hangulinputcontext.c (1.2):
+
+	do not make string when there is not any cho, jung, jongseong, in
+	hangul_buffer_get_jamo_string ()
+
+2005-07-23 13:50  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* src/scim_hangul_imengine.cpp (1.2):
+
+	Apply KeyEvent::map_to_layout method
+
+2005-07-23 06:58  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* m4/Makefile.in (1.5):
+
+	Remove Makefile.in which is automatically generated from automake
+
+2005-07-23 05:57  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* Makefile.am (1.3):
+
+	Make sure conditional building of skim directory
+
+2005-06-25 18:21  LiuCougar <liuspider@users.sourceforge.net>
+
+	* po/de.po (1.4):
+
+	updated de
+
+2005-06-25 18:20  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/configure.in.in (1.2):
+
+	require scim/skim 1.3.0
+
+2005-06-05 14:32  James Su <suzhe@tsinghua.org.cn>
+
+	* po/: fr.po (1.4), ja.po (1.4):
+
+	Update it.po
+
+2005-06-05 14:29  James Su <suzhe@tsinghua.org.cn>
+
+	* m4/Makefile.in (1.4), po/de.po (1.3), po/fr.po (1.3), po/ko.po
+	(1.3), po/zh_CN.po (1.3):
+
+	Updated fr.po and it.po
+
+2005-05-09 01:04  tag scim_pinyin_0_5_90
+
+2005-05-09 01:04  tag scim_pinyin_0_5_91
+
+2005-05-09 01:04  tag skim_1_3_0
+
+2005-05-09 01:04  tag skim_1_3_1
+
+2005-05-09 01:04  tag skim_1_3_2
+
+2005-05-09 01:04  tag skim_1_3_3
+
+2005-05-09 01:04  tag skim_1_4_0
+
+2005-05-09 01:04  tag skim_1_4_1
+
+2005-05-09 01:04  tag skim_1_4_2
+
+2005-05-09 01:04  tag skim_1_4_3
+
+2005-05-09 01:04  tag skim_1_4_5
+
+2005-05-09 01:04  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/acinclude.m4.in (1.4):
+
+	qt 3.3 can be used with kde >= 3.2
+
+2005-04-27 17:30  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/: Makefile.am (1.2), icons/Makefile.am (1.1),
+	icons/scim-hangul.png (1.1),
+	setupui/skimplugin_scim_hangul_config.desktop (1.2):
+
+	added icon
+
+2005-04-01 19:23  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/: am_edit (1.7), cvs.sh (1.7):
+
+	desktop po file support
+
+2005-03-29 00:41  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/: Doxyfile.global (1.3), Makefile.common (1.3),
+	acinclude.m4.in (1.3), am_edit (1.6), conf.change.pl (1.3),
+	config.guess (1.2), config.sub (1.2), configure.in.bot.end (1.2),
+	cvs.sh (1.6), detect-autoconf.sh (1.5), libtool.m4.in (1.6),
+	ltmain.sh (1.3):
+
+	updated admin to KDE 3.4.0
+
+2005-03-23 18:13  LiuCougar <liuspider@users.sourceforge.net>
+
+	* Makefile.am (1.2), bootstrap (1.2), configure.ac (1.3),
+	m4/Makefile.in (1.3), skim/AUTHORS (1.1), skim/Makefile.am (1.1),
+	skim/Makefile.cvs (1.1), skim/README (1.1), skim/bootstrap (1.1),
+	skim/configure.in.in (1.1), skim/po/Makefile.am (1.1),
+	skim/po/de.po (1.1), skim/po/fr.po (1.1), skim/po/it.po (1.1),
+	skim/po/ja.po (1.1), skim/po/ko.po (1.1),
+	skim/po/skim-scim-hangul.pot (1.1), skim/po/zh_CN.po (1.1),
+	skim/po/zh_TW.po (1.1), skim/setupui/Makefile.am (1.1),
+	skim/setupui/scim_hangul.kcfg (1.1), skim/setupui/scim_hangul.kcfgc
+	(1.1), skim/setupui/scim_hangul_ui.ui (1.1),
+	skim/setupui/scimhangulsettingloader.cpp (1.1),
+	skim/setupui/scimhangulsettingloader.h (1.1),
+	skim/setupui/skimplugin_scim_hangul_config.desktop (1.1):
+
+	skim supported is incorporated
+
+2005-03-02 00:32  LiuCougar <liuspider@users.sourceforge.net>
+
+	* po/ja.po (1.3):
+
+	updated ja translation
+
+2005-02-27 15:57  tag scim_hangul_0_2_0
+
+2005-02-27 15:57  James Su <suzhe@tsinghua.org.cn>
+
+	* ABOUT-NLS (1.2), intl/dcigettext.c (1.2), intl/eval-plural.h
+	(1.2), po/Makefile.in.in (1.2):
+
+	Fix gettext.
+
+2005-02-27 15:48  James Su <suzhe@tsinghua.org.cn>
+
+	* config.rpath (1.1), po/de.po (1.2), po/fr.po (1.2), po/ja.po
+	(1.2), po/ko.po (1.2), po/zh_CN.po (1.2):
+
+	Add config.rpath
+
+2005-01-30 14:59  tag skim_1_1_0
+
+2005-01-30 14:59  tag skim_1_2_0
+
+2005-01-30 14:59  tag skim_1_2_1
+
+2005-01-30 14:59  tag skim_1_2_2
+
+2005-01-30 14:59  tag skim_1_2_3
+
+2005-01-30 14:59  James Su <suzhe@tsinghua.org.cn>
+
+	* skim/admin/cvs.sh (1.5):
+
+	Added it.po
+
+2005-01-06 13:07  James Su <suzhe@tsinghua.org.cn>
+
+	* configure.ac (1.2), m4/Makefile.in (1.2):
+
+	Added AC_SUBST(LIBTOOL_EXPORT_OPTIONS).
+
+2004-12-27 05:19  tag initial
+
+2004-12-27 05:19  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* ABOUT-NLS (1.1), AUTHORS (1.1), COPYING (1.1), ChangeLog (1.1),
+	INSTALL (1.1), Makefile.am (1.1), NEWS (1.1), README (1.1),
+	bootstrap (1.1), configure.ac (1.1), scim-hangul.spec.in (1.1),
+	data/Makefile.am (1.1), data/scim-hangul.png (1.1), intl/ChangeLog
+	(1.1), intl/Makefile.in (1.1), intl/VERSION (1.1),
+	intl/bindtextdom.c (1.1), intl/config.charset (1.1),
+	intl/dcgettext.c (1.1), intl/dcigettext.c (1.1), intl/dcngettext.c
+	(1.1), intl/dgettext.c (1.1), intl/dngettext.c (1.1),
+	intl/eval-plural.h (1.1), intl/explodename.c (1.1),
+	intl/finddomain.c (1.1), intl/gettext.c (1.1), intl/gettextP.h
+	(1.1), intl/gmo.h (1.1), intl/hash-string.h (1.1),
+	intl/intl-compat.c (1.1), intl/l10nflist.c (1.1),
+	intl/libgnuintl.h.in (1.1), intl/loadinfo.h (1.1),
+	intl/loadmsgcat.c (1.1), intl/localcharset.c (1.1),
+	intl/localcharset.h (1.1), intl/locale.alias (1.1),
+	intl/localealias.c (1.1), intl/localename.c (1.1), intl/log.c
+	(1.1), intl/ngettext.c (1.1), intl/os2compat.c (1.1),
+	intl/os2compat.h (1.1), intl/osdep.c (1.1), intl/plural-exp.c
+	(1.1), intl/plural-exp.h (1.1), intl/plural.c (1.1), intl/plural.y
+	(1.1), intl/printf-args.c (1.1), intl/printf-args.h (1.1),
+	intl/printf-parse.c (1.1), intl/printf-parse.h (1.1), intl/printf.c
+	(1.1), intl/ref-add.sin (1.1), intl/ref-del.sin (1.1),
+	intl/relocatable.c (1.1), intl/relocatable.h (1.1),
+	intl/textdomain.c (1.1), intl/vasnprintf.c (1.1), intl/vasnprintf.h
+	(1.1), intl/vasnwprintf.h (1.1), intl/wprintf-parse.h (1.1),
+	intl/xsize.h (1.1), m4/ChangeLog (1.1), m4/Makefile.am (1.1),
+	m4/Makefile.in (1.1), m4/codeset.m4 (1.1), m4/gettext.m4 (1.1),
+	m4/glibc21.m4 (1.1), m4/iconv.m4 (1.1), m4/intdiv0.m4 (1.1),
+	m4/intmax.m4 (1.1), m4/inttypes-pri.m4 (1.1), m4/inttypes.m4 (1.1),
+	m4/inttypes_h.m4 (1.1), m4/isc-posix.m4 (1.1), m4/lcmessage.m4
+	(1.1), m4/lib-ld.m4 (1.1), m4/lib-link.m4 (1.1), m4/lib-prefix.m4
+	(1.1), m4/longdouble.m4 (1.1), m4/longlong.m4 (1.1), m4/nls.m4
+	(1.1), m4/po.m4 (1.1), m4/printf-posix.m4 (1.1), m4/progtest.m4
+	(1.1), m4/signed.m4 (1.1), m4/size_max.m4 (1.1), m4/stdint_h.m4
+	(1.1), m4/uintmax_t.m4 (1.1), m4/ulonglong.m4 (1.1), m4/wchar_t.m4
+	(1.1), m4/wint_t.m4 (1.1), m4/xsize.m4 (1.1), po/Makefile.in.in
+	(1.1), po/Makevars (1.1), po/Makevars.template (1.1),
+	po/POTFILES.in (1.1), po/Rules-quot (1.1), po/boldquot.sed (1.1),
+	po/de.po (1.1), po/en@boldquot.header (1.1), po/en@quot.header
+	(1.1), po/fr.po (1.1), po/insert-header.sin (1.1), po/ja.po (1.1),
+	po/ko.po (1.1), po/quot.sed (1.1), po/remove-potcdate.sin (1.1),
+	po/scim-hangul.pot (1.1), po/zh_CN.po (1.1), src/Makefile.am (1.1),
+	src/candidatetable.h (1.1), src/hangul.h (1.1), src/hangulctype.c
+	(1.1), src/hangulinputcontext.c (1.1), src/hangulkeyboard.h (1.1),
+	src/scim_hangul_imengine.cpp (1.1), src/scim_hangul_imengine.h
+	(1.1), src/scim_hangul_imengine_setup.cpp (1.1):
+
+	Initial revision
+
+2004-12-27 05:19  Choe Hwanjin <hwanjin@users.sourceforge.net>
+
+	* ABOUT-NLS (1.1.1.1), AUTHORS (1.1.1.1), COPYING (1.1.1.1),
+	ChangeLog (1.1.1.1), INSTALL (1.1.1.1), Makefile.am (1.1.1.1), NEWS
+	(1.1.1.1), README (1.1.1.1), bootstrap (1.1.1.1), configure.ac
+	(1.1.1.1), scim-hangul.spec.in (1.1.1.1), data/Makefile.am
+	(1.1.1.1), data/scim-hangul.png (1.1.1.1), intl/ChangeLog
+	(1.1.1.1), intl/Makefile.in (1.1.1.1), intl/VERSION (1.1.1.1),
+	intl/bindtextdom.c (1.1.1.1), intl/config.charset (1.1.1.1),
+	intl/dcgettext.c (1.1.1.1), intl/dcigettext.c (1.1.1.1),
+	intl/dcngettext.c (1.1.1.1), intl/dgettext.c (1.1.1.1),
+	intl/dngettext.c (1.1.1.1), intl/eval-plural.h (1.1.1.1),
+	intl/explodename.c (1.1.1.1), intl/finddomain.c (1.1.1.1),
+	intl/gettext.c (1.1.1.1), intl/gettextP.h (1.1.1.1), intl/gmo.h
+	(1.1.1.1), intl/hash-string.h (1.1.1.1), intl/intl-compat.c
+	(1.1.1.1), intl/l10nflist.c (1.1.1.1), intl/libgnuintl.h.in
+	(1.1.1.1), intl/loadinfo.h (1.1.1.1), intl/loadmsgcat.c (1.1.1.1),
+	intl/localcharset.c (1.1.1.1), intl/localcharset.h (1.1.1.1),
+	intl/locale.alias (1.1.1.1), intl/localealias.c (1.1.1.1),
+	intl/localename.c (1.1.1.1), intl/log.c (1.1.1.1), intl/ngettext.c
+	(1.1.1.1), intl/os2compat.c (1.1.1.1), intl/os2compat.h (1.1.1.1),
+	intl/osdep.c (1.1.1.1), intl/plural-exp.c (1.1.1.1),
+	intl/plural-exp.h (1.1.1.1), intl/plural.c (1.1.1.1), intl/plural.y
+	(1.1.1.1), intl/printf-args.c (1.1.1.1), intl/printf-args.h
+	(1.1.1.1), intl/printf-parse.c (1.1.1.1), intl/printf-parse.h
+	(1.1.1.1), intl/printf.c (1.1.1.1), intl/ref-add.sin (1.1.1.1),
+	intl/ref-del.sin (1.1.1.1), intl/relocatable.c (1.1.1.1),
+	intl/relocatable.h (1.1.1.1), intl/textdomain.c (1.1.1.1),
+	intl/vasnprintf.c (1.1.1.1), intl/vasnprintf.h (1.1.1.1),
+	intl/vasnwprintf.h (1.1.1.1), intl/wprintf-parse.h (1.1.1.1),
+	intl/xsize.h (1.1.1.1), m4/ChangeLog (1.1.1.1), m4/Makefile.am
+	(1.1.1.1), m4/Makefile.in (1.1.1.1), m4/codeset.m4 (1.1.1.1),
+	m4/gettext.m4 (1.1.1.1), m4/glibc21.m4 (1.1.1.1), m4/iconv.m4
+	(1.1.1.1), m4/intdiv0.m4 (1.1.1.1), m4/intmax.m4 (1.1.1.1),
+	m4/inttypes-pri.m4 (1.1.1.1), m4/inttypes.m4 (1.1.1.1),
+	m4/inttypes_h.m4 (1.1.1.1), m4/isc-posix.m4 (1.1.1.1),
+	m4/lcmessage.m4 (1.1.1.1), m4/lib-ld.m4 (1.1.1.1), m4/lib-link.m4
+	(1.1.1.1), m4/lib-prefix.m4 (1.1.1.1), m4/longdouble.m4 (1.1.1.1),
+	m4/longlong.m4 (1.1.1.1), m4/nls.m4 (1.1.1.1), m4/po.m4 (1.1.1.1),
+	m4/printf-posix.m4 (1.1.1.1), m4/progtest.m4 (1.1.1.1),
+	m4/signed.m4 (1.1.1.1), m4/size_max.m4 (1.1.1.1), m4/stdint_h.m4
+	(1.1.1.1), m4/uintmax_t.m4 (1.1.1.1), m4/ulonglong.m4 (1.1.1.1),
+	m4/wchar_t.m4 (1.1.1.1), m4/wint_t.m4 (1.1.1.1), m4/xsize.m4
+	(1.1.1.1), po/Makefile.in.in (1.1.1.1), po/Makevars (1.1.1.1),
+	po/Makevars.template (1.1.1.1), po/POTFILES.in (1.1.1.1),
+	po/Rules-quot (1.1.1.1), po/boldquot.sed (1.1.1.1), po/de.po
+	(1.1.1.1), po/en@boldquot.header (1.1.1.1), po/en@quot.header
+	(1.1.1.1), po/fr.po (1.1.1.1), po/insert-header.sin (1.1.1.1),
+	po/ja.po (1.1.1.1), po/ko.po (1.1.1.1), po/quot.sed (1.1.1.1),
+	po/remove-potcdate.sin (1.1.1.1), po/scim-hangul.pot (1.1.1.1),
+	po/zh_CN.po (1.1.1.1), src/Makefile.am (1.1.1.1),
+	src/candidatetable.h (1.1.1.1), src/hangul.h (1.1.1.1),
+	src/hangulctype.c (1.1.1.1), src/hangulinputcontext.c (1.1.1.1),
+	src/hangulkeyboard.h (1.1.1.1), src/scim_hangul_imengine.cpp
+	(1.1.1.1), src/scim_hangul_imengine.h (1.1.1.1),
+	src/scim_hangul_imengine_setup.cpp (1.1.1.1):
+
+	initial import
+
+2004-10-07 23:33  tag skim_1_0_2
+
+2004-10-07 23:33  tag skim_1_0_3
+
+2004-10-07 23:33  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/libtool.m4.in (1.5):
+
+	this is the right file for the last commit
+
+2004-10-07 14:14  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/libtool.m4.in (1.4):
+
+	reverted to the libtool.m4.in in the kde distribution, for the new
+	one does not generate *.la files correctly. however, the reverted
+	one is patched with the icc/icpc compiler support
+
+2004-10-05 18:23  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/libtool.m4.in (1.3):
+
+	updated libtool to 1.5.8
+
+2004-08-26 02:42  tag skim_0_9_7
+
+2004-08-26 02:42  tag skim_1_0_0
+
+2004-08-26 02:42  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/am_edit (1.5):
+
+	updated desktop file for ja and merge in latest string into po/pot
+	files
+
+2004-08-24 18:30  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/: am_edit (1.4), cvs.sh (1.4):
+
+	verbos when updated translation
+
+2004-08-22 22:03  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/: am_edit (1.3), cvs.sh (1.3):
+
+	use po file to translate desktop files
+
+2004-08-19 18:05  tag skim_0_9_6
+
+2004-08-19 18:05  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/detect-autoconf.sh (1.4):
+
+	add the patch from "Dawit A." <adawit@kde.org>
+
+2004-06-11 00:18  tag skim_0_9_0
+
+2004-06-11 00:18  tag skim_0_9_1
+
+2004-06-11 00:18  tag skim_0_9_4
+
+2004-06-11 00:18  tag skim_0_9_5
+
+2004-06-11 00:18  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/detect-autoconf.sh (1.3):
+
+	prefer autoconf 2.59 rather than 2.57
+
+2004-05-02 16:24  tag scim_kde_0_7_5
+
+2004-05-02 16:24  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/ChangeLog (1.3):
+
+	email address changed
+
+2004-04-06 04:36  tag scim_kde_0_7
+
+2004-04-06 04:36  tag scim_kde_0_7_1
+
+2004-04-06 04:36  tag scim_kde_0_7_2
+
+2004-04-06 04:36  tag scim_kde_0_7_3
+
+2004-04-06 04:36  tag scim_kde_0_7_4
+
+2004-04-06 04:36  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/: ChangeLog (1.2), Doxyfile.am (1.2), Doxyfile.global
+	(1.2), Makefile.common (1.2), acinclude.m4.in (1.2), am_edit (1.2),
+	conf.change.pl (1.2), config.pl (1.2), config.rpath (1.1),
+	cvs-clean.pl (1.2), cvs.sh (1.2), debianrules (1.2), depcomp (1.2),
+	detect-autoconf.sh (1.2), install-sh (1.2), libtool.m4.in (1.2),
+	ltmain.sh (1.2):
+
+	upgrade to automake-1.7 with up-to-date KDE support built-in
+
+2003-09-15 12:08  tag init
+
+2003-09-15 12:08  tag scim_kde_0_6
+
+2003-09-15 12:08  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/: compile (1.1), Doxyfile.global (1.1),
+	Makefile.common (1.1), depcomp (1.1), config.pl (1.1),
+	configure.in.min (1.1), ltmain.sh (1.1), config.guess (1.1),
+	acinclude.m4.in (1.1), install-sh (1.1), config.sub (1.1), missing
+	(1.1), cvs.sh (1.1), mkinstalldirs (1.1), conf.change.pl (1.1),
+	nmcheck (1.1), am_edit (1.1), libtool.m4.in (1.1), cvs-clean.pl
+	(1.1), debianrules (1.1), detect-autoconf.sh (1.1), ylwrap (1.1),
+	ChangeLog (1.1), Doxyfile.am (1.1), configure.in.bot.end (1.1):
+
+	Initial revision
+
+2003-09-15 12:08  LiuCougar <liuspider@users.sourceforge.net>
+
+	* skim/admin/: compile (1.1.1.1), Doxyfile.global (1.1.1.1),
+	Makefile.common (1.1.1.1), depcomp (1.1.1.1), config.pl (1.1.1.1),
+	configure.in.min (1.1.1.1), ltmain.sh (1.1.1.1), config.guess
+	(1.1.1.1), acinclude.m4.in (1.1.1.1), install-sh (1.1.1.1),
+	config.sub (1.1.1.1), missing (1.1.1.1), cvs.sh (1.1.1.1),
+	mkinstalldirs (1.1.1.1), conf.change.pl (1.1.1.1), nmcheck
+	(1.1.1.1), am_edit (1.1.1.1), libtool.m4.in (1.1.1.1), cvs-clean.pl
+	(1.1.1.1), debianrules (1.1.1.1), detect-autoconf.sh (1.1.1.1),
+	ylwrap (1.1.1.1), ChangeLog (1.1.1.1), Doxyfile.am (1.1.1.1),
+	configure.in.bot.end (1.1.1.1):
+
+	init import of scim-panel-kde
+

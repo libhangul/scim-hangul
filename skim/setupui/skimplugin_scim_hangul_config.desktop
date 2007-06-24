@@ -1,0 +1,26 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=scim-hangul
+Type=Service
+ServiceTypes=Skim/KCModule
+
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_scim_hangul
+X-KDE-ParentApp=skimplugin_scim
+X-KDE-ParentComponents=skimplugin_scim
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_imengines
+Name=Hangul
+Name[ja]=ハングル
+Name[ko]=한글
+Name[pa]=ਹੁਗਲ
+Name[zh_CN]=韩文
+Name[zh_TW]=韓文
+Comment=Configure for scim-hangul IMEngine
+Comment[de]=Eingabemethode scim-hangul einrichten
+Comment[fr]=Configuration Moteur de Saisie scim-Hangul
+Comment[it]=Configurazione per il motore di inserimento scim-hangul
+Comment[ja]=scim-hangul IMエンジンの設定
+Comment[ko]=scim-hangul IM엔진 설정
+Comment[pa]=ਸਕਿਮ-ਹੁੰਗਲ IMEngine ਲਈ ਸੰਰਚਨਾ
+Comment[zh_CN]= 韩文输入法配置界面
+Comment[zh_TW]=韓文輸入法引擎的設定介面

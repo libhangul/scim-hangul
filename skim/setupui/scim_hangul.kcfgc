@@ -1,0 +1,4 @@
+File=scim_hangul.kcfg
+ClassName=ScimHangulConfig
+Singleton=true
+Mutators=false

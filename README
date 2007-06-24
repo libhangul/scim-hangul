@@ -1,0 +1,62 @@
+* Introduction
+
+Scim-hangul is a SCIM IMEngine module for inputing korean scripts. Scim-hangul
+is for native speakers, not for foreigners. If you don't want to learn korean
+keyboard layout, use scim-table :)
+For SCIM, see: http://www.scim-im.org/
+
+* Feature
+
+This engine supports 2 beolsik, 3 beolsik final, 3 beolsik 390, 3 beolsik
+no-shift and etc. You can input chinese character (hanja) with F9 key when you
+have preedit string.
+
+Check other korean input methods here:
+http://wiki.kldp.org/wiki.php/KoreanInputMethod
+
+* Build instructions
+Install SCIM
+    You need SCIM to use scim-hangul. Install SCIM first. 
+    See this URL: http://www.scim-im.org/
+
+Download libhangul
+    You need libhangul 0.0.3 or newer to build scim-hangul 0.3.0. You can
+    download libhangul here:
+    Project page: http://kldp.net/projects/hangul/
+    Download page: http://kldp.net/frs/?group_id=362
+
+Build libhangul and install
+    Follow this commands:
+
+    $ ./configure --prefix=[where you want to install libhangul]
+    $ make
+    # make install
+
+    If you want to install libhangul to system directory, you need to login
+    as root.
+
+Build and install scim-hangul
+    Follow this commands:
+
+    $ ./configure --prefix=[where you want to install scim-hangul]
+    $ make
+    # make install
+    
+    If you installed libhangul into different directory with pkgconfig, you may
+    need to set environment variable PKG_CONFIG_PATH. For example, if you 
+    installed libhangul in '/usr/local', you can set PKG_CONFIG_PATH as:
+
+    in bash:
+	$ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
+
+    in csh:
+	% set PKG_CONFIG_PATH /usr/local/lib/pkgconfig:/usr/lib/pkgconfig
+
+* Usage
+    If you installed SCIM correctly, you can see SCIM icon in Notification
+    area (or system tray). Move the focus to some widgets which can input
+    text and click the SCIM icon in Notification area, then you can see
+    language selection menu. There, choose korean(or hangul). Now you can
+    input korean.
+
+    You can change keyboard layouts on SCIM palette.
