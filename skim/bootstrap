@@ -8,8 +8,8 @@ do
 done
 if [ ! -d "admin" ]; then
   echo "Please press enter directly for the next question about the password"
-  cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim login 
-  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim co -P -d admin skim/admin
+  cvs -d:pserver:anonymous@skim.cvs.sourceforge.net:/cvsroot/scim login 
+  cvs -z3 -d:pserver:anonymous@skim.cvs.sourceforge.net:/cvsroot/scim co -P -d admin skim/admin
 fi
 
 if [ ! -d "admin" ]; then
