@@ -47,8 +47,8 @@ ACLOCAL			= aclocal -I $(ac_aux_dir)
 
 ACLOCAL_AMFLAGS = -I m4
 
-.PHONY: changelog
+.PHONY: ChangeLog
 
-changelog:
-	cvs2cl -P -r -b -T -S --gmt -U $(top_srcdir)/developers -f $(top_srcdir)/ChangeLog
+ChangeLog:
+	svn2cl --include-rev --authors=$(top_srcdir)/developers -f $(top_srcdir)/$@
 
