@@ -6,7 +6,7 @@ Follow this instructions to make new release.
 
 * Update documents
 
-* Update the version string in configure.ac
+* Update the version string in configure.ac, skim/configure.in.in
 
 * Update autotools scripts and Makefiles and then run bootstrap in skim dir.
   Note: You should run skim/bootstrap after update autotools files, because

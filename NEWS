@@ -1,3 +1,7 @@
+scim-hangul 0.3.2
+    * add symbol input feature
+    * add dutch translation from Ronald Stroethoff <stroet43 (at) zonnet.nl>
+
 scim-hangul 0.3.1
     * Updated for libhangul 0.0.4
     * Fixed some small bugs
