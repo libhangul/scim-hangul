@@ -24,6 +24,7 @@ AM_CONFIG_HEADER([config.h])
 # Init gettext
 ALL_LINGUAS="de fr ja ko nl pa zh_CN"
 AM_GNU_GETTEXT
+AM_MKINSTALLDIRS
 
 GETTEXT_PACKAGE=scim-hangul
 AC_SUBST(GETTEXT_PACKAGE)
@@ -101,6 +102,7 @@ AM_CONDITIONAL(SCIM_BUILD_SKIM_SETUP, [test "$skim_support" = "yes"])
 
 SCIM_ICONDIR=`$PKG_CONFIG --variable=icondir scim`
 SCIM_MODULEDIR=`$PKG_CONFIG --variable=moduledir scim`
+SCIM_DATADIR=`$PKG_CONFIG --variable=scimdatadir scim`
 
 if test "x$SCIM_ICONDIR" = "x"; then
   SCIM_ICONDIR=${datadir}/scim/icons
@@ -110,10 +112,15 @@ if test "x$SCIM_MODULEDIR" = "x"; then
   SCIM_MODULEDIR=${libdir}/scim-1.0
 fi
 
+if test "x$SCIM_DATADIR" = "x"; then
+  SCIM_DATADIR=${datadir}/scim
+fi
+
 AC_SUBST(SCIM_ICONDIR)
 AC_SUBST(SCIM_MODULEDIR)
+AC_SUBST(SCIM_DATADIR)
 
-SCIM_HANGUL_DATADIR=$datadir/scim/hangul
+SCIM_HANGUL_DATADIR=${SCIM_DATADIR}/hangul
 AC_SUBST(SCIM_HANGUL_DATADIR)
 
 AC_CONFIG_FILES([Makefile

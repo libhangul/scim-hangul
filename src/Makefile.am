@@ -18,7 +18,7 @@
 MAINTAINERCLEANFILES	= Makefile.in
 
 hangul_DEFINES		= -DSCIM_ICONDIR=\"@SCIM_ICONDIR@\" \
-			  -DSCIM_HANGUL_LOCALEDIR=\"$(datadir)/locale\" \
+			  -DSCIM_HANGUL_LOCALEDIR=\"$(localedir)\" \
 			  -DSCIM_HANGUL_DATADIR=\"@SCIM_HANGUL_DATADIR@\" \
 			  -DSCIM_HANGUL_ICON_FILE=\"@SCIM_ICONDIR@/scim-hangul.png\"
 
