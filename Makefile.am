@@ -24,7 +24,13 @@ AUX_DIST                = $(ac_aux_dir)/config.guess \
 			$(ac_aux_dir)/missing \
 			$(ac_aux_dir)/depcomp
 
-EXTRA_DIST		= config.rpath  mkinstalldirs  bootstrap scim-hangul.spec
+EXTRA_DIST = \
+	ChangeLog_0.3.1	\
+	README.ko	\
+	config.rpath	\
+	mkinstalldirs	\
+	bootstrap	\
+	scim-hangul.spec
 
 ## @end 1
 
