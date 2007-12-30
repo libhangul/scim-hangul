@@ -20,7 +20,7 @@
 #! /bin/sh
 
 set -x
-aclocal ${ACLOCAL_FLAGS}
+aclocal -I ./m4 ${ACLOCAL_FLAGS}
 autoheader
 libtoolize -c --automake
 automake --add-missing --copy --include-deps
