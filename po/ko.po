@@ -2,14 +2,14 @@
 # Copyright (C) 2004 James Su <suzhe@tsinghua.org.cn>
 # This file is distributed under the same license as the scim-hangul package.
 # 김기태 <neeum@yahoo.com>, 2004.
-# Choe Hwanjin <krisna@kldp.org>, 2004.
+# Choe Hwanjin <choehwanjin@gmail.com>, 2004.
 # 
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: scim-hangul 0.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-07 01:09+0900\n"
+"POT-Creation-Date: 2007-12-30 12:10+0900\n"
 "PO-Revision-Date: 2005-10-29 18:57+0800\n"
 "Last-Translator: Choe Hwanjin <choe.hwanjin@gmail.com>\n"
 "Language-Team: Korean\n"
@@ -17,32 +17,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/scim_hangul_imengine.cpp:118 src/scim_hangul_imengine.cpp:894
+#: src/scim_hangul_imengine.cpp:118 src/scim_hangul_imengine.cpp:921
 #: src/scim_hangul_imengine_setup.cpp:298
 msgid "2bul"
 msgstr "두벌식"
 
-#: src/scim_hangul_imengine.cpp:119 src/scim_hangul_imengine.cpp:896
+#: src/scim_hangul_imengine.cpp:119 src/scim_hangul_imengine.cpp:923
 #: src/scim_hangul_imengine_setup.cpp:299
 msgid "3bul 2bul-shifted"
 msgstr "세벌식 두벌자판"
 
-#: src/scim_hangul_imengine.cpp:120 src/scim_hangul_imengine.cpp:898
+#: src/scim_hangul_imengine.cpp:120 src/scim_hangul_imengine.cpp:925
 #: src/scim_hangul_imengine_setup.cpp:300
 msgid "3bul Final"
 msgstr "세벌식 최종"
 
-#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:900
+#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:927
 #: src/scim_hangul_imengine_setup.cpp:301
 msgid "3bul 390"
 msgstr "세벌식 390"
 
-#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:902
+#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:929
 #: src/scim_hangul_imengine_setup.cpp:302
 msgid "3bul No-Shift"
 msgstr "세벌식 순아래"
 
-#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:904
+#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:931
 #: src/scim_hangul_imengine_setup.cpp:303
 msgid "3bul Yetgeul"
 msgstr "세벌식 옛글"
@@ -51,15 +51,15 @@ msgstr "세벌식 옛글"
 msgid "Korean"
 msgstr "한국어"
 
-#: src/scim_hangul_imengine.cpp:178
+#: src/scim_hangul_imengine.cpp:189
 msgid "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
 msgstr "Copyright (C) 2006 최환진 <choe.hwanjin@gmail.com>"
 
-#: src/scim_hangul_imengine.cpp:191
+#: src/scim_hangul_imengine.cpp:202
 msgid "Key bindings:\n"
 msgstr "단축키 배치:\n"
 
-#: src/scim_hangul_imengine.cpp:202
+#: src/scim_hangul_imengine.cpp:213
 #, c-format
 msgid ""
 "  Hangul key: %s\n"
@@ -70,7 +70,7 @@ msgstr ""
 "    위 키를 누르면 한글 모드에서는 영문 모드로 영문 모드에서는 \n"
 "    한글 모드로 바뀝니다\n"
 
-#: src/scim_hangul_imengine.cpp:206
+#: src/scim_hangul_imengine.cpp:217
 #, c-format
 msgid ""
 "  Hanja key: %s\n"
