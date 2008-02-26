@@ -34,6 +34,7 @@
   #include <config.h>
 #endif
 
+#include <cstring>
 #include <scim.h>
 #include <gtk/scimkeyselection.h>
 

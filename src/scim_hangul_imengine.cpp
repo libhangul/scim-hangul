@@ -33,6 +33,7 @@
   #include <config.h>
 #endif
 
+#include <cstring>
 #include <scim.h>
 #include "scim_hangul_imengine.h"
 
