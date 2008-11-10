@@ -392,8 +392,6 @@ HangulInstance::candidate_key_event (const KeyEvent &key)
         case SCIM_KEY_7: 
         case SCIM_KEY_8: 
         case SCIM_KEY_9: 
-	    if (is_hanja_mode())
-		return false;
             select_candidate (key.code - SCIM_KEY_1);
             break;
         default:
