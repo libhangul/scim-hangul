@@ -20,6 +20,7 @@
 #! /bin/sh
 
 set -x
+touch ChangeLog
 aclocal -I ./m4 ${ACLOCAL_FLAGS}
 autoheader
 libtoolize -c --automake
