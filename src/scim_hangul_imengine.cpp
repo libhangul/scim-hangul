@@ -80,6 +80,7 @@
 #define SCIM_PROP_LAYOUT_3F      SCIM_PROP_LAYOUT "/3f"
 #define SCIM_PROP_LAYOUT_3S      SCIM_PROP_LAYOUT "/3s"
 #define SCIM_PROP_LAYOUT_3Y      SCIM_PROP_LAYOUT "/3y"
+#define SCIM_PROP_LAYOUT_RO      SCIM_PROP_LAYOUT "/ro"
 
 #ifndef SCIM_HANGUL_ICON_FILE
     #define SCIM_HANGUL_ICON_FILE           (SCIM_ICONDIR "/scim-hangul.png")
@@ -94,6 +95,7 @@ static Property keyboard_layout_3f(SCIM_PROP_LAYOUT_3F, "");
 static Property keyboard_layout_39(SCIM_PROP_LAYOUT_39, "");
 static Property keyboard_layout_3s(SCIM_PROP_LAYOUT_3S, "");
 static Property keyboard_layout_3y(SCIM_PROP_LAYOUT_3Y, "");
+static Property keyboard_layout_ro(SCIM_PROP_LAYOUT_RO, "");
 
 static Property hangul_mode(SCIM_PROP_HANGUL_MODE, "");
 static Property hanja_mode(SCIM_PROP_HANJA_MODE, "");
@@ -122,6 +124,7 @@ extern "C" {
 	keyboard_layout_39.set_label(_("3bul 390"));
 	keyboard_layout_3s.set_label(_("3bul No-Shift"));
 	keyboard_layout_3y.set_label(_("3bul Yetgeul"));
+	keyboard_layout_ro.set_label(_("Romaja"));
 
         return 1;
     }
@@ -899,6 +902,8 @@ HangulInstance::change_keyboard_layout(const String &layout)
 	label = keyboard_layout_3s.get_label();
     } else if (layout == "3y") {
 	label = keyboard_layout_3y.get_label();
+    } else if (layout == "ro") {
+	label = keyboard_layout_ro.get_label();
     }
 
     m_factory->m_keyboard_layout = layout;
@@ -928,6 +933,8 @@ HangulInstance::register_all_properties()
 	layout_label = _("3bul No-Shift");
     } else if (m_factory->m_keyboard_layout == "3y") {
 	layout_label = _("3bul Yetgeul");
+    } else if (m_factory->m_keyboard_layout == "ro") {
+	layout_label = _("Romaja");
     }
     keyboard_layout.set_label(layout_label);
     proplist.push_back(keyboard_layout);
@@ -937,6 +944,7 @@ HangulInstance::register_all_properties()
     proplist.push_back(keyboard_layout_39);
     proplist.push_back(keyboard_layout_3s);
     proplist.push_back(keyboard_layout_3y);
+    proplist.push_back(keyboard_layout_ro);
 
     if (use_ascii_mode()) {
 	if (m_hangul_mode) {
