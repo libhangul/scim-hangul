@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: scim-hangul 0.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-30 12:10+0900\n"
+"POT-Creation-Date: 2009-10-16 23:16+0900\n"
 "PO-Revision-Date: 2005-10-29 18:57+0800\n"
 "Last-Translator: Choe Hwanjin <choe.hwanjin@gmail.com>\n"
 "Language-Team: Korean\n"
@@ -17,49 +17,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/scim_hangul_imengine.cpp:118 src/scim_hangul_imengine.cpp:921
-#: src/scim_hangul_imengine_setup.cpp:298
+#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:925
+#: src/scim_hangul_imengine_setup.cpp:299
 msgid "2bul"
 msgstr "두벌식"
 
-#: src/scim_hangul_imengine.cpp:119 src/scim_hangul_imengine.cpp:923
-#: src/scim_hangul_imengine_setup.cpp:299
+#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:927
+#: src/scim_hangul_imengine_setup.cpp:300
 msgid "3bul 2bul-shifted"
 msgstr "세벌식 두벌자판"
 
-#: src/scim_hangul_imengine.cpp:120 src/scim_hangul_imengine.cpp:925
-#: src/scim_hangul_imengine_setup.cpp:300
+#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:929
+#: src/scim_hangul_imengine_setup.cpp:301
 msgid "3bul Final"
 msgstr "세벌식 최종"
 
-#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:927
-#: src/scim_hangul_imengine_setup.cpp:301
+#: src/scim_hangul_imengine.cpp:124 src/scim_hangul_imengine.cpp:931
+#: src/scim_hangul_imengine_setup.cpp:302
 msgid "3bul 390"
 msgstr "세벌식 390"
 
-#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:929
-#: src/scim_hangul_imengine_setup.cpp:302
+#: src/scim_hangul_imengine.cpp:125 src/scim_hangul_imengine.cpp:933
+#: src/scim_hangul_imengine_setup.cpp:303
 msgid "3bul No-Shift"
 msgstr "세벌식 순아래"
 
-#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:931
-#: src/scim_hangul_imengine_setup.cpp:303
+#: src/scim_hangul_imengine.cpp:126 src/scim_hangul_imengine.cpp:935
+#: src/scim_hangul_imengine_setup.cpp:304
 msgid "3bul Yetgeul"
 msgstr "세벌식 옛글"
 
-#: src/scim_hangul_imengine.cpp:146
+#: src/scim_hangul_imengine.cpp:127 src/scim_hangul_imengine.cpp:937
+msgid "Romaja"
+msgstr "로마자"
+
+#: src/scim_hangul_imengine.cpp:150
 msgid "Korean"
 msgstr "한국어"
 
-#: src/scim_hangul_imengine.cpp:189
+#: src/scim_hangul_imengine.cpp:193
 msgid "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
 msgstr "Copyright (C) 2006 최환진 <choe.hwanjin@gmail.com>"
 
-#: src/scim_hangul_imengine.cpp:202
+#: src/scim_hangul_imengine.cpp:206
 msgid "Key bindings:\n"
 msgstr "단축키 배치:\n"
 
-#: src/scim_hangul_imengine.cpp:213
+#: src/scim_hangul_imengine.cpp:217
 #, c-format
 msgid ""
 "  Hangul key: %s\n"
@@ -70,7 +74,7 @@ msgstr ""
 "    위 키를 누르면 한글 모드에서는 영문 모드로 영문 모드에서는 \n"
 "    한글 모드로 바뀝니다\n"
 
-#: src/scim_hangul_imengine.cpp:217
+#: src/scim_hangul_imengine.cpp:221
 #, c-format
 msgid ""
 "  Hanja key: %s\n"
@@ -79,93 +83,93 @@ msgstr ""
 "  한자 키: %s\n"
 "    위 키를 누르면 한글을 한자로 변환할 수 있습니다.\n"
 
-#: src/scim_hangul_imengine_setup.cpp:111
+#: src/scim_hangul_imengine_setup.cpp:112
 msgid "Hangul"
 msgstr "한글"
 
-#: src/scim_hangul_imengine_setup.cpp:116
+#: src/scim_hangul_imengine_setup.cpp:117
 msgid "A Hangul IMEngine Module."
 msgstr "한글 입력 엔진 모듈"
 
-#: src/scim_hangul_imengine_setup.cpp:160
+#: src/scim_hangul_imengine_setup.cpp:161
 msgid "Hangul keys:"
 msgstr "한글 키:"
 
-#: src/scim_hangul_imengine_setup.cpp:162
+#: src/scim_hangul_imengine_setup.cpp:163
 msgid "Select Hangul keys"
 msgstr "한글 키 선택"
 
-#: src/scim_hangul_imengine_setup.cpp:164
+#: src/scim_hangul_imengine_setup.cpp:165
 msgid ""
 "The key events to change input mode between hangul and ascii.Click on the "
 "button on the right to edit it."
 msgstr "한글 영문 모드 변환 단축키 설정. 오른쪽 버튼을 눌러 수정하세요."
 
-#: src/scim_hangul_imengine_setup.cpp:178
+#: src/scim_hangul_imengine_setup.cpp:179
 msgid "Hangul to Hanja keys:"
 msgstr "한글/한자 변환 키:"
 
-#: src/scim_hangul_imengine_setup.cpp:180
+#: src/scim_hangul_imengine_setup.cpp:181
 msgid "Select Hangul to Hanja keys"
 msgstr "한글/한자 변환키 선택"
 
-#: src/scim_hangul_imengine_setup.cpp:182
+#: src/scim_hangul_imengine_setup.cpp:183
 msgid ""
 "The key events to convert Hangul to Hanja character. Click on the button on "
 "the right to edit it."
 msgstr "한글에서 한자 변환 단축키 설정. 오른쪽 버튼을 눌러 수정하세요."
 
-#: src/scim_hangul_imengine_setup.cpp:196
+#: src/scim_hangul_imengine_setup.cpp:197
 msgid "Hanja mode keys:"
 msgstr "한자 모드 키"
 
-#: src/scim_hangul_imengine_setup.cpp:198
+#: src/scim_hangul_imengine_setup.cpp:199
 msgid "Select a key to toggle hanja mode keys"
 msgstr "한자 모드 키 선택"
 
-#: src/scim_hangul_imengine_setup.cpp:200
+#: src/scim_hangul_imengine_setup.cpp:201
 msgid ""
 "The key events to toggle Hanja mode. Click on the button on the right to "
 "edit it."
 msgstr "한글에서 한자 변환 단축키 설정. 오른쪽 버튼을 눌러 수정하세요."
 
-#: src/scim_hangul_imengine_setup.cpp:244
+#: src/scim_hangul_imengine_setup.cpp:245
 msgid "_Use ascii input mode"
 msgstr "영문 모드 사용(_U)"
 
-#: src/scim_hangul_imengine_setup.cpp:247
+#: src/scim_hangul_imengine_setup.cpp:248
 msgid ""
 "Whether to enable to change the input mode between hangul and ascii mode."
 msgstr "영문 모드를 지원하게 할것 인지 설정"
 
-#: src/scim_hangul_imengine_setup.cpp:253
+#: src/scim_hangul_imengine_setup.cpp:254
 msgid "_Show candidate comment"
 msgstr "한자 설명 보이기(_S)"
 
-#: src/scim_hangul_imengine_setup.cpp:256
+#: src/scim_hangul_imengine_setup.cpp:257
 msgid "Whether to show the comment of candidates or not."
 msgstr "한자 입력할때 한자 설명 보이게 하려면 선택하세요"
 
-#: src/scim_hangul_imengine_setup.cpp:261
+#: src/scim_hangul_imengine_setup.cpp:262
 msgid "_Commit by word"
 msgstr "단어 단위로 입력(_C)"
 
-#: src/scim_hangul_imengine_setup.cpp:264
+#: src/scim_hangul_imengine_setup.cpp:265
 msgid "Whether not to commit until any non-hangul character is inputed."
 msgstr "영문자나 띠어쓰기가 될때 입력이 되도록 선택함"
 
-#: src/scim_hangul_imengine_setup.cpp:284
+#: src/scim_hangul_imengine_setup.cpp:285
 msgid "<span weight=\"bold\">Keyboard layout</span>"
 msgstr "<span weight=\"bold\">자판 설정</span>"
 
-#: src/scim_hangul_imengine_setup.cpp:313
+#: src/scim_hangul_imengine_setup.cpp:314
 msgid "<span weight=\"bold\">Key bindings</span>"
 msgstr "<span weight=\"bold\">단축키 설정</span>"
 
-#: src/scim_hangul_imengine_setup.cpp:379
+#: src/scim_hangul_imengine_setup.cpp:380
 msgid "Keyboard"
 msgstr "키보드"
 
-#: src/scim_hangul_imengine_setup.cpp:384
+#: src/scim_hangul_imengine_setup.cpp:385
 msgid "Options"
 msgstr "설정"

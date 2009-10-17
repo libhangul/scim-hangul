@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-30 12:10+0900\n"
+"POT-Creation-Date: 2009-10-16 23:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,49 +16,53 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/scim_hangul_imengine.cpp:118 src/scim_hangul_imengine.cpp:921
-#: src/scim_hangul_imengine_setup.cpp:298
+#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:925
+#: src/scim_hangul_imengine_setup.cpp:299
 msgid "2bul"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:119 src/scim_hangul_imengine.cpp:923
-#: src/scim_hangul_imengine_setup.cpp:299
+#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:927
+#: src/scim_hangul_imengine_setup.cpp:300
 msgid "3bul 2bul-shifted"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:120 src/scim_hangul_imengine.cpp:925
-#: src/scim_hangul_imengine_setup.cpp:300
+#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:929
+#: src/scim_hangul_imengine_setup.cpp:301
 msgid "3bul Final"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:927
-#: src/scim_hangul_imengine_setup.cpp:301
+#: src/scim_hangul_imengine.cpp:124 src/scim_hangul_imengine.cpp:931
+#: src/scim_hangul_imengine_setup.cpp:302
 msgid "3bul 390"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:929
-#: src/scim_hangul_imengine_setup.cpp:302
+#: src/scim_hangul_imengine.cpp:125 src/scim_hangul_imengine.cpp:933
+#: src/scim_hangul_imengine_setup.cpp:303
 msgid "3bul No-Shift"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:931
-#: src/scim_hangul_imengine_setup.cpp:303
+#: src/scim_hangul_imengine.cpp:126 src/scim_hangul_imengine.cpp:935
+#: src/scim_hangul_imengine_setup.cpp:304
 msgid "3bul Yetgeul"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:146
+#: src/scim_hangul_imengine.cpp:127 src/scim_hangul_imengine.cpp:937
+msgid "Romaja"
+msgstr ""
+
+#: src/scim_hangul_imengine.cpp:150
 msgid "Korean"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:189
+#: src/scim_hangul_imengine.cpp:193
 msgid "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:202
+#: src/scim_hangul_imengine.cpp:206
 msgid "Key bindings:\n"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:213
+#: src/scim_hangul_imengine.cpp:217
 #, c-format
 msgid ""
 "  Hangul key: %s\n"
@@ -66,100 +70,100 @@ msgid ""
 "    mode and the hangul input mode.\n"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:217
+#: src/scim_hangul_imengine.cpp:221
 #, c-format
 msgid ""
 "  Hanja key: %s\n"
 "    This key binding is to convert a hangul character to a hanja character.\n"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:111
+#: src/scim_hangul_imengine_setup.cpp:112
 msgid "Hangul"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:116
+#: src/scim_hangul_imengine_setup.cpp:117
 msgid "A Hangul IMEngine Module."
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:160
+#: src/scim_hangul_imengine_setup.cpp:161
 msgid "Hangul keys:"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:162
+#: src/scim_hangul_imengine_setup.cpp:163
 msgid "Select Hangul keys"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:164
+#: src/scim_hangul_imengine_setup.cpp:165
 msgid ""
 "The key events to change input mode between hangul and ascii.Click on the "
 "button on the right to edit it."
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:178
+#: src/scim_hangul_imengine_setup.cpp:179
 msgid "Hangul to Hanja keys:"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:180
+#: src/scim_hangul_imengine_setup.cpp:181
 msgid "Select Hangul to Hanja keys"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:182
+#: src/scim_hangul_imengine_setup.cpp:183
 msgid ""
 "The key events to convert Hangul to Hanja character. Click on the button on "
 "the right to edit it."
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:196
+#: src/scim_hangul_imengine_setup.cpp:197
 msgid "Hanja mode keys:"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:198
+#: src/scim_hangul_imengine_setup.cpp:199
 msgid "Select a key to toggle hanja mode keys"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:200
+#: src/scim_hangul_imengine_setup.cpp:201
 msgid ""
 "The key events to toggle Hanja mode. Click on the button on the right to "
 "edit it."
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:244
+#: src/scim_hangul_imengine_setup.cpp:245
 msgid "_Use ascii input mode"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:247
+#: src/scim_hangul_imengine_setup.cpp:248
 msgid ""
 "Whether to enable to change the input mode between hangul and ascii mode."
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:253
+#: src/scim_hangul_imengine_setup.cpp:254
 msgid "_Show candidate comment"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:256
+#: src/scim_hangul_imengine_setup.cpp:257
 msgid "Whether to show the comment of candidates or not."
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:261
+#: src/scim_hangul_imengine_setup.cpp:262
 msgid "_Commit by word"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:264
+#: src/scim_hangul_imengine_setup.cpp:265
 msgid "Whether not to commit until any non-hangul character is inputed."
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:284
+#: src/scim_hangul_imengine_setup.cpp:285
 msgid "<span weight=\"bold\">Keyboard layout</span>"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:313
+#: src/scim_hangul_imengine_setup.cpp:314
 msgid "<span weight=\"bold\">Key bindings</span>"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:379
+#: src/scim_hangul_imengine_setup.cpp:380
 msgid "Keyboard"
 msgstr ""
 
-#: src/scim_hangul_imengine_setup.cpp:384
+#: src/scim_hangul_imengine_setup.cpp:385
 msgid "Options"
 msgstr ""
