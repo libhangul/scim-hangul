@@ -86,6 +86,9 @@
     #define SCIM_HANGUL_ICON_FILE           (SCIM_ICONDIR "/scim-hangul.png")
 #endif
 
+#define SCIM_HANGUL_ICON_ON      SCIM_ICONDIR "/scim-hangul-on.png"
+#define SCIM_HANGUL_ICON_OFF     SCIM_ICONDIR "/scim-hangul-off.png"
+
 static ConfigPointer _scim_config (0);
 
 static Property keyboard_layout   (SCIM_PROP_LAYOUT,    "");
@@ -876,9 +879,9 @@ HangulInstance::toggle_hanja_mode()
     m_factory->m_hanja_mode = !m_factory->m_hanja_mode;
 
     if (m_factory->m_hanja_mode) {
-	hanja_mode.set_label("漢");
+	hanja_mode.set_icon(SCIM_HANGUL_ICON_ON);
     } else {
-	hanja_mode.set_label("韓");
+	hanja_mode.set_icon(SCIM_HANGUL_ICON_OFF);
     }
 
     update_property(hanja_mode);
@@ -955,11 +958,12 @@ HangulInstance::register_all_properties()
 	proplist.push_back(hangul_mode);
     }
 
-    if (is_hanja_mode()) {
-	hanja_mode.set_label("漢");
+    if (m_factory->m_hanja_mode) {
+	hanja_mode.set_icon(SCIM_HANGUL_ICON_ON);
     } else {
-	hanja_mode.set_label("韓");
+	hanja_mode.set_icon(SCIM_HANGUL_ICON_OFF);
     }
+    hanja_mode.set_label(_("Hanja Lock"));
     proplist.push_back(hanja_mode);
 
     register_properties(proplist);
