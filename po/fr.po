@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-16 23:16+0900\n"
+"POT-Creation-Date: 2009-12-27 16:19+0900\n"
 "PO-Revision-Date: 2005-06-04 11:45+0200\n"
 "Last-Translator: Damien Menanteau <damien.menanteau@cegetel.net>\n"
 "Language-Team: French\n"
@@ -18,53 +18,53 @@ msgstr ""
 "X-Generator: KBabel 1.10.1\n"
 "Plural-Forms:  nplurals=2; plural=(n > 1);\n"
 
-#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:925
+#: src/scim_hangul_imengine.cpp:124 src/scim_hangul_imengine.cpp:928
 #: src/scim_hangul_imengine_setup.cpp:299
 msgid "2bul"
 msgstr "2bul"
 
-#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:927
+#: src/scim_hangul_imengine.cpp:125 src/scim_hangul_imengine.cpp:930
 #: src/scim_hangul_imengine_setup.cpp:300
 msgid "3bul 2bul-shifted"
 msgstr "3bul 2bul-étendu"
 
-#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:929
+#: src/scim_hangul_imengine.cpp:126 src/scim_hangul_imengine.cpp:932
 #: src/scim_hangul_imengine_setup.cpp:301
 msgid "3bul Final"
 msgstr "3bul Version Finale"
 
-#: src/scim_hangul_imengine.cpp:124 src/scim_hangul_imengine.cpp:931
+#: src/scim_hangul_imengine.cpp:127 src/scim_hangul_imengine.cpp:934
 #: src/scim_hangul_imengine_setup.cpp:302
 msgid "3bul 390"
 msgstr "3bul 390"
 
-#: src/scim_hangul_imengine.cpp:125 src/scim_hangul_imengine.cpp:933
+#: src/scim_hangul_imengine.cpp:128 src/scim_hangul_imengine.cpp:936
 #: src/scim_hangul_imengine_setup.cpp:303
 msgid "3bul No-Shift"
 msgstr "3bul Non Etendu"
 
-#: src/scim_hangul_imengine.cpp:126 src/scim_hangul_imengine.cpp:935
+#: src/scim_hangul_imengine.cpp:129 src/scim_hangul_imengine.cpp:938
 #: src/scim_hangul_imengine_setup.cpp:304
 msgid "3bul Yetgeul"
 msgstr "3bul Traditionnel"
 
-#: src/scim_hangul_imengine.cpp:127 src/scim_hangul_imengine.cpp:937
+#: src/scim_hangul_imengine.cpp:130 src/scim_hangul_imengine.cpp:940
 msgid "Romaja"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:150
+#: src/scim_hangul_imengine.cpp:153
 msgid "Korean"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:193
+#: src/scim_hangul_imengine.cpp:196
 msgid "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:206
+#: src/scim_hangul_imengine.cpp:209
 msgid "Key bindings:\n"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:217
+#: src/scim_hangul_imengine.cpp:220
 #, c-format
 msgid ""
 "  Hangul key: %s\n"
@@ -72,11 +72,15 @@ msgid ""
 "    mode and the hangul input mode.\n"
 msgstr ""
 
-#: src/scim_hangul_imengine.cpp:221
+#: src/scim_hangul_imengine.cpp:224
 #, c-format
 msgid ""
 "  Hanja key: %s\n"
 "    This key binding is to convert a hangul character to a hanja character.\n"
+msgstr ""
+
+#: src/scim_hangul_imengine.cpp:966
+msgid "Hanja Lock"
 msgstr ""
 
 #: src/scim_hangul_imengine_setup.cpp:112
@@ -123,8 +127,9 @@ msgstr ""
 "sur le bouton sur la droite pour les modifier."
 
 #: src/scim_hangul_imengine_setup.cpp:197
-msgid "Hanja mode keys:"
-msgstr ""
+#, fuzzy
+msgid "Hanja Lock keys:"
+msgstr "Touches Hangul vers Hanja :"
 
 #: src/scim_hangul_imengine_setup.cpp:199
 #, fuzzy

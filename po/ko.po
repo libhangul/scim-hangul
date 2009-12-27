@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the scim-hangul package.
 # 김기태 <neeum@yahoo.com>, 2004.
 # Choe Hwanjin <choehwanjin@gmail.com>, 2004.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: scim-hangul 0.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-16 23:16+0900\n"
+"POT-Creation-Date: 2009-12-27 16:19+0900\n"
 "PO-Revision-Date: 2005-10-29 18:57+0800\n"
 "Last-Translator: Choe Hwanjin <choe.hwanjin@gmail.com>\n"
 "Language-Team: Korean\n"
@@ -17,53 +17,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/scim_hangul_imengine.cpp:121 src/scim_hangul_imengine.cpp:925
+#: src/scim_hangul_imengine.cpp:124 src/scim_hangul_imengine.cpp:928
 #: src/scim_hangul_imengine_setup.cpp:299
 msgid "2bul"
 msgstr "두벌식"
 
-#: src/scim_hangul_imengine.cpp:122 src/scim_hangul_imengine.cpp:927
+#: src/scim_hangul_imengine.cpp:125 src/scim_hangul_imengine.cpp:930
 #: src/scim_hangul_imengine_setup.cpp:300
 msgid "3bul 2bul-shifted"
 msgstr "세벌식 두벌자판"
 
-#: src/scim_hangul_imengine.cpp:123 src/scim_hangul_imengine.cpp:929
+#: src/scim_hangul_imengine.cpp:126 src/scim_hangul_imengine.cpp:932
 #: src/scim_hangul_imengine_setup.cpp:301
 msgid "3bul Final"
 msgstr "세벌식 최종"
 
-#: src/scim_hangul_imengine.cpp:124 src/scim_hangul_imengine.cpp:931
+#: src/scim_hangul_imengine.cpp:127 src/scim_hangul_imengine.cpp:934
 #: src/scim_hangul_imengine_setup.cpp:302
 msgid "3bul 390"
 msgstr "세벌식 390"
 
-#: src/scim_hangul_imengine.cpp:125 src/scim_hangul_imengine.cpp:933
+#: src/scim_hangul_imengine.cpp:128 src/scim_hangul_imengine.cpp:936
 #: src/scim_hangul_imengine_setup.cpp:303
 msgid "3bul No-Shift"
 msgstr "세벌식 순아래"
 
-#: src/scim_hangul_imengine.cpp:126 src/scim_hangul_imengine.cpp:935
+#: src/scim_hangul_imengine.cpp:129 src/scim_hangul_imengine.cpp:938
 #: src/scim_hangul_imengine_setup.cpp:304
 msgid "3bul Yetgeul"
 msgstr "세벌식 옛글"
 
-#: src/scim_hangul_imengine.cpp:127 src/scim_hangul_imengine.cpp:937
+#: src/scim_hangul_imengine.cpp:130 src/scim_hangul_imengine.cpp:940
 msgid "Romaja"
 msgstr "로마자"
 
-#: src/scim_hangul_imengine.cpp:150
+#: src/scim_hangul_imengine.cpp:153
 msgid "Korean"
 msgstr "한국어"
 
-#: src/scim_hangul_imengine.cpp:193
+#: src/scim_hangul_imengine.cpp:196
 msgid "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
 msgstr "Copyright (C) 2006 최환진 <choe.hwanjin@gmail.com>"
 
-#: src/scim_hangul_imengine.cpp:206
+#: src/scim_hangul_imengine.cpp:209
 msgid "Key bindings:\n"
 msgstr "단축키 배치:\n"
 
-#: src/scim_hangul_imengine.cpp:217
+#: src/scim_hangul_imengine.cpp:220
 #, c-format
 msgid ""
 "  Hangul key: %s\n"
@@ -74,7 +74,7 @@ msgstr ""
 "    위 키를 누르면 한글 모드에서는 영문 모드로 영문 모드에서는 \n"
 "    한글 모드로 바뀝니다\n"
 
-#: src/scim_hangul_imengine.cpp:221
+#: src/scim_hangul_imengine.cpp:224
 #, c-format
 msgid ""
 "  Hanja key: %s\n"
@@ -82,6 +82,10 @@ msgid ""
 msgstr ""
 "  한자 키: %s\n"
 "    위 키를 누르면 한글을 한자로 변환할 수 있습니다.\n"
+
+#: src/scim_hangul_imengine.cpp:966
+msgid "Hanja Lock"
+msgstr "한자 전용"
 
 #: src/scim_hangul_imengine_setup.cpp:112
 msgid "Hangul"
@@ -120,18 +124,18 @@ msgid ""
 msgstr "한글에서 한자 변환 단축키 설정. 오른쪽 버튼을 눌러 수정하세요."
 
 #: src/scim_hangul_imengine_setup.cpp:197
-msgid "Hanja mode keys:"
-msgstr "한자 모드 키"
+msgid "Hanja Lock keys:"
+msgstr "한자 전용 키:"
 
 #: src/scim_hangul_imengine_setup.cpp:199
 msgid "Select a key to toggle hanja mode keys"
-msgstr "한자 모드 키 선택"
+msgstr "한자 전용 모드 키 선택"
 
 #: src/scim_hangul_imengine_setup.cpp:201
 msgid ""
 "The key events to toggle Hanja mode. Click on the button on the right to "
 "edit it."
-msgstr "한글에서 한자 변환 단축키 설정. 오른쪽 버튼을 눌러 수정하세요."
+msgstr "한자 전용 모드 전환 단축키 설정. 오른쪽 버튼을 눌러 수정하세요."
 
 #: src/scim_hangul_imengine_setup.cpp:245
 msgid "_Use ascii input mode"
