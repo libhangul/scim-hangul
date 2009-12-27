@@ -194,7 +194,7 @@ static KeyBindingData key_bindings[] =
         // key
         SCIM_CONFIG_HANJA_MODE_KEY,
         // label
-        N_("Hanja mode keys:"),
+        N_("Hanja Lock keys:"),
         // title
         N_("Select a key to toggle hanja mode keys"),
         // tooltip
