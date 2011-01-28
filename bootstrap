@@ -21,9 +21,9 @@
 
 set -x
 touch ChangeLog
-aclocal -I ./m4 ${ACLOCAL_FLAGS}
 autoheader
 libtoolize -c --automake
+aclocal -I ./m4 ${ACLOCAL_FLAGS}
 automake --add-missing --copy --include-deps
 autoconf
 cd skim
