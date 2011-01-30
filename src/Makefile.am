@@ -51,10 +51,12 @@ hangul_imengine_setup_la_SOURCES = scim_hangul_imengine_setup.cpp
 
 hangul_imengine_setup_la_CFLAGS  = @SCIM_GTKUTILS_CFLAGS@ \
 				   @SCIM_CFLAGS@ \
+				   @LIBHANGUL_CFLAGS@ \
 				   $(hangul_DEFINES)
 
 hangul_imengine_setup_la_CXXFLAGS= @SCIM_GTKUTILS_CFLAGS@ \
 				   @SCIM_CFLAGS@ \
+				   @LIBHANGUL_CFLAGS@ \
 				   $(hangul_DEFINES)
 
 hangul_imengine_setup_la_LDFLAGS = -avoid-version \
@@ -63,4 +65,5 @@ hangul_imengine_setup_la_LDFLAGS = -avoid-version \
 				   @LIBTOOL_EXPORT_OPTIONS@ \
 				   @SCIM_GTKUTILS_LIBS@ \
 				   @INTLLIBS@ \
+				   @LIBHANGUL_LIBS@ \
 				   @SCIM_LIBS@

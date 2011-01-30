@@ -176,7 +176,6 @@ private:
 
     void   toggle_hangul_mode();
     void   toggle_hanja_mode();
-    void   change_keyboard_layout(const String &layout);
 
     /* property handling */
     void   register_all_properties();

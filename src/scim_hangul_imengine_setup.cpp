@@ -50,6 +50,8 @@
   #define bind_textdomain_codeset(domain,codeset)
 #endif
 
+#include <hangul.h>
+
 using namespace scim;
 
 #define scim_module_init hangul_imengine_setup_LTX_scim_module_init
@@ -296,12 +298,12 @@ create_keyboard_page(GtkTooltips *tooltips)
 
     GtkWidget *combo_box = gtk_combo_box_new_text();
     gtk_box_pack_start(GTK_BOX(vbox2), combo_box, FALSE, TRUE, 0);
-    gtk_combo_box_append_text(GTK_COMBO_BOX(combo_box), _("2bul"));
-    gtk_combo_box_append_text(GTK_COMBO_BOX(combo_box), _("3bul 2bul-shifted"));
-    gtk_combo_box_append_text(GTK_COMBO_BOX(combo_box), _("3bul Final"));
-    gtk_combo_box_append_text(GTK_COMBO_BOX(combo_box), _("3bul 390"));
-    gtk_combo_box_append_text(GTK_COMBO_BOX(combo_box), _("3bul No-Shift"));
-    gtk_combo_box_append_text(GTK_COMBO_BOX(combo_box), _("3bul Yetgeul"));
+
+    int n = hangul_ic_get_n_keyboards();
+    for (i = 0; i < n; i++) {
+	const char* name = hangul_ic_get_keyboard_name(i);
+	gtk_combo_box_append_text(GTK_COMBO_BOX(combo_box), name);
+    }
     g_signal_connect(G_OBJECT(combo_box), "changed",
                      G_CALLBACK (on_default_combo_box_changed), NULL);
     keyboard_layout_combo = combo_box;
@@ -400,21 +402,14 @@ load_config (const ConfigPointer &config)
 
     // keyboard layout option
     String layout = config->read(String(SCIM_CONFIG_LAYOUT), String("2"));
-    int no = -1;
-    if (layout == "2") {
-        no = 0;
-    } else if (layout == "32") {
-        no = 1;
-    } else if (layout == "3f") {
-        no = 2;
-    } else if (layout == "39") {
-        no = 3;
-    } else if (layout == "3s") {
-        no = 4;
-    } else if (layout == "3y") {
-        no = 5;
+    int n = hangul_ic_get_n_keyboards();
+    for (int i = 0; i < n; ++i) {
+	const char* id = hangul_ic_get_keyboard_id(i);
+	if (layout == id) {
+	    gtk_combo_box_set_active(GTK_COMBO_BOX(keyboard_layout_combo), i);
+	    break;
+	}
     }
-    gtk_combo_box_set_active(GTK_COMBO_BOX(keyboard_layout_combo), no);
 
     // key bindings
     for (unsigned int i = 0; i < G_N_ELEMENTS(key_bindings); ++ i) {
@@ -447,20 +442,8 @@ save_config (const ConfigPointer &config)
         return;
 
     int no = gtk_combo_box_get_active(GTK_COMBO_BOX(keyboard_layout_combo));
-    String layout;
-    if (no == 0) {
-        layout = "2";
-    } else if (no == 1) {
-        layout = "32";
-    } else if (no == 2) {
-        layout = "3f";
-    } else if (no == 3) {
-        layout = "39";
-    } else if (no == 4) {
-        layout = "3s";
-    } else if (no == 5) {
-        layout = "3y";
-    }
+    const char* id = hangul_ic_get_keyboard_id(no);
+    String layout = id == NULL ? "2" : id;
     config->write(String(SCIM_CONFIG_LAYOUT), layout);
 
     for (unsigned int i = 0; i < G_N_ELEMENTS(key_bindings); ++ i) {

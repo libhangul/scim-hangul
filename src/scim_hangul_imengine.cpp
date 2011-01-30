@@ -73,15 +73,6 @@
 #define SCIM_PROP_HANGUL_MODE    SCIM_PROP_PREFIX "/HangulMode"
 #define SCIM_PROP_HANJA_MODE     SCIM_PROP_PREFIX "/HanjaMode"
 
-#define SCIM_PROP_LAYOUT         SCIM_PROP_PREFIX "/Layout"
-#define SCIM_PROP_LAYOUT_2       SCIM_PROP_LAYOUT "/2"
-#define SCIM_PROP_LAYOUT_32      SCIM_PROP_LAYOUT "/32"
-#define SCIM_PROP_LAYOUT_39      SCIM_PROP_LAYOUT "/39"
-#define SCIM_PROP_LAYOUT_3F      SCIM_PROP_LAYOUT "/3f"
-#define SCIM_PROP_LAYOUT_3S      SCIM_PROP_LAYOUT "/3s"
-#define SCIM_PROP_LAYOUT_3Y      SCIM_PROP_LAYOUT "/3y"
-#define SCIM_PROP_LAYOUT_RO      SCIM_PROP_LAYOUT "/ro"
-
 #ifndef SCIM_HANGUL_ICON_FILE
     #define SCIM_HANGUL_ICON_FILE           (SCIM_ICONDIR "/scim-hangul.png")
 #endif
@@ -90,15 +81,6 @@
 #define SCIM_HANGUL_ICON_OFF     SCIM_ICONDIR "/scim-hangul-off.png"
 
 static ConfigPointer _scim_config (0);
-
-static Property keyboard_layout   (SCIM_PROP_LAYOUT,    "");
-static Property keyboard_layout_2 (SCIM_PROP_LAYOUT_2,  "");
-static Property keyboard_layout_32(SCIM_PROP_LAYOUT_32, "");
-static Property keyboard_layout_3f(SCIM_PROP_LAYOUT_3F, "");
-static Property keyboard_layout_39(SCIM_PROP_LAYOUT_39, "");
-static Property keyboard_layout_3s(SCIM_PROP_LAYOUT_3S, "");
-static Property keyboard_layout_3y(SCIM_PROP_LAYOUT_3Y, "");
-static Property keyboard_layout_ro(SCIM_PROP_LAYOUT_RO, "");
 
 static Property hangul_mode(SCIM_PROP_HANGUL_MODE, "");
 static Property hanja_mode(SCIM_PROP_HANJA_MODE, "");
@@ -120,14 +102,6 @@ extern "C" {
         SCIM_DEBUG_IMENGINE(1) << "Initialize Hangul Engine\n";
 
         _scim_config = config;
-
-	keyboard_layout_2.set_label(_("2bul"));
-	keyboard_layout_32.set_label(_("3bul 2bul-shifted"));
-	keyboard_layout_3f.set_label(_("3bul Final"));
-	keyboard_layout_39.set_label(_("3bul 390"));
-	keyboard_layout_3s.set_label(_("3bul No-Shift"));
-	keyboard_layout_3y.set_label(_("3bul Yetgeul"));
-	keyboard_layout_ro.set_label(_("Romaja"));
 
         return 1;
     }
@@ -683,6 +657,8 @@ HangulInstance::focus_in ()
 
     register_all_properties();
 
+    hangul_ic_select_keyboard(m_hic, m_factory->m_keyboard_layout.c_str());
+
     if (m_lookup_table.number_of_candidates ()) {
         update_lookup_table (m_lookup_table);
         show_lookup_table ();
@@ -708,10 +684,6 @@ HangulInstance::trigger_property (const String &property)
 	toggle_hangul_mode();
     } else if (property == SCIM_PROP_HANJA_MODE) {
 	toggle_hanja_mode();
-    } else if (property.compare(0, strlen(SCIM_PROP_LAYOUT), SCIM_PROP_LAYOUT) == 0) {
-	int pos = strlen(SCIM_PROP_LAYOUT) + 1;
-	int len = property.length() - pos;
-	change_keyboard_layout(property.substr(pos, len));
     }
 }
 
@@ -890,64 +862,9 @@ HangulInstance::toggle_hanja_mode()
 }
 
 void
-HangulInstance::change_keyboard_layout(const String &layout)
-{
-    String label;
-    if (layout == "2") {
-	label = keyboard_layout_2.get_label();
-    } else if (layout == "32") {
-	label = keyboard_layout_32.get_label();
-    } else if (layout == "3f") {
-	label = keyboard_layout_3f.get_label();
-    } else if (layout == "39") {
-	label = keyboard_layout_39.get_label();
-    } else if (layout == "3s") {
-	label = keyboard_layout_3s.get_label();
-    } else if (layout == "3y") {
-	label = keyboard_layout_3y.get_label();
-    } else if (layout == "ro") {
-	label = keyboard_layout_ro.get_label();
-    }
-
-    m_factory->m_keyboard_layout = layout;
-    keyboard_layout.set_label(label);
-    hangul_ic_select_keyboard(m_hic, m_factory->m_keyboard_layout.c_str());
-
-    update_property(keyboard_layout);
-
-    m_factory->m_config->write(String(SCIM_CONFIG_LAYOUT), layout);
-}
-
-void
 HangulInstance::register_all_properties()
 {
     PropertyList proplist;
-
-    const char* layout_label;
-    if (m_factory->m_keyboard_layout == "2") {
-	layout_label = _("2bul");
-    } else if (m_factory->m_keyboard_layout == "32") {
-	layout_label = _("3bul 2bul-shifted");
-    } else if (m_factory->m_keyboard_layout == "3f") {
-	layout_label = _("3bul Final");
-    } else if (m_factory->m_keyboard_layout == "39") {
-	layout_label = _("3bul 390");
-    } else if (m_factory->m_keyboard_layout == "3s") {
-	layout_label = _("3bul No-Shift");
-    } else if (m_factory->m_keyboard_layout == "3y") {
-	layout_label = _("3bul Yetgeul");
-    } else if (m_factory->m_keyboard_layout == "ro") {
-	layout_label = _("Romaja");
-    }
-    keyboard_layout.set_label(layout_label);
-    proplist.push_back(keyboard_layout);
-    proplist.push_back(keyboard_layout_2);
-    proplist.push_back(keyboard_layout_32);
-    proplist.push_back(keyboard_layout_3f);
-    proplist.push_back(keyboard_layout_39);
-    proplist.push_back(keyboard_layout_3s);
-    proplist.push_back(keyboard_layout_3y);
-    proplist.push_back(keyboard_layout_ro);
 
     if (use_ascii_mode()) {
 	if (m_hangul_mode) {

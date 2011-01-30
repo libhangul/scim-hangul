@@ -47,7 +47,7 @@ AC_C_CONST
 AC_TYPE_SIZE_T
 
 # Checks for libraries.
-PKG_CHECK_MODULES(LIBHANGUL,[libhangul >= 0.0.4])
+PKG_CHECK_MODULES(LIBHANGUL,[libhangul >= 0.0.12])
 
 SCIM_VERSION=0.99.8
 
