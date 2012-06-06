@@ -1,4 +1,4 @@
-#~/bin/bash
+#!/bin/bash
 PROJECT_FILES="ABOUT-NLS COPYING INSTALL NEWS ChangeLog"
 for file in $PROJECT_FILES
 do
@@ -8,11 +8,32 @@ do
 done
 if [ ! -d "admin" ]; then
   svn co svn://anonsvn.kde.org/home/kde/branches/KDE/3.5/kde-common/admin admin
+  (cd admin
+   patch -p0 << END_OF_PATCH
+--- cvs.sh	(revision 1298630)
++++ cvs.sh	(working copy)
+@@ -72,6 +72,10 @@
+     echo "*** \$AUTOMAKE_STRING found."
+     UNSERMAKE=no
+     ;;
++  automake*1.11*)
++    echo "*** \$AUTOMAKE_STRING found."
++    UNSERMAKE=no
++    ;;
+   "" )
+     echo "*** AUTOMAKE NOT FOUND!."
+     echo "*** KDE requires automake \$required_automake_version"
+END_OF_PATCH
+   )
 fi
 
 if [ ! -d "admin" ]; then
   echo -e "ERROR: missing admin directory\n       please see README on how to bootstrap from SVN"
   exit
+fi
+
+if test ! -f admin/config.rpath ; then
+	touch admin/config.rpath
 fi
 
 gmake -f admin/Makefile.common cvs
