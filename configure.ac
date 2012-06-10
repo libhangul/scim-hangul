@@ -22,9 +22,10 @@ AM_INIT_AUTOMAKE
 AM_CONFIG_HEADER([config.h])
 
 # Init gettext
+AM_GNU_GETTEXT()
+AM_GNU_GETTEXT_VERSION([0.18])
 ALL_LINGUAS="de fr ja ko nl pa zh_CN"
 AM_GNU_GETTEXT
-AM_MKINSTALLDIRS
 
 GETTEXT_PACKAGE=scim-hangul
 AC_SUBST(GETTEXT_PACKAGE)
@@ -126,7 +127,6 @@ AC_SUBST(SCIM_HANGUL_DATADIR)
 AC_CONFIG_FILES([Makefile
 		 intl/Makefile
 		 po/Makefile.in
-		 m4/Makefile
 		 src/Makefile
 		 data/Makefile
 		 scim-hangul.spec])

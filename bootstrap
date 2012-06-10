@@ -21,12 +21,14 @@
 
 set -x
 touch ChangeLog
-autoheader
-libtoolize -c --automake
+autopoint --force
+libtoolize --copy --automake
 aclocal -I ./m4 ${ACLOCAL_FLAGS}
+autoheader
 automake --add-missing --copy --include-deps
 autoconf
 cd skim
 ./bootstrap
 cd ..
+
 ## @end 1
