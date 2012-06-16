@@ -21,16 +21,6 @@ AC_SUBST(SCIM_HANGUL_VERSION)
 AM_INIT_AUTOMAKE
 AM_CONFIG_HEADER([config.h])
 
-# Init gettext
-AM_GNU_GETTEXT()
-AM_GNU_GETTEXT_VERSION([0.18])
-ALL_LINGUAS="de fr ja ko nl pa zh_CN"
-AM_GNU_GETTEXT
-
-GETTEXT_PACKAGE=scim-hangul
-AC_SUBST(GETTEXT_PACKAGE)
-AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [The gettext domain])
-
 # Init libtool
 AC_DISABLE_STATIC
 AC_LIBTOOL_DLOPEN
@@ -46,6 +36,15 @@ AC_LANG(C++)
 
 AC_C_CONST
 AC_TYPE_SIZE_T
+
+# Init gettext
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.18.1])
+ALL_LINGUAS="de fr ja ko nl pa zh_CN"
+
+GETTEXT_PACKAGE=scim-hangul
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [The gettext domain])
 
 # Checks for libraries.
 PKG_CHECK_MODULES(LIBHANGUL,[libhangul >= 0.0.12])
@@ -125,7 +124,6 @@ SCIM_HANGUL_DATADIR=${SCIM_DATADIR}/hangul
 AC_SUBST(SCIM_HANGUL_DATADIR)
 
 AC_CONFIG_FILES([Makefile
-		 intl/Makefile
 		 po/Makefile.in
 		 src/Makefile
 		 data/Makefile
