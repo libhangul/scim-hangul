@@ -93,10 +93,11 @@ if test "$enable_debug" = "yes"; then
     CXXFLAGS="$CXXFLAGS -g"
 fi
 
-AC_ARG_ENABLE(skim-support,
-              [  --disable-skim-support  Enable skim Setup UI],
-	      skim_support=no,
-	      skim_support=yes)
+# Temporarily disable to build skim module
+#AC_ARG_ENABLE(skim-support,
+#              [  --disable-skim-support  Enable skim Setup UI],
+#	      skim_support=no,
+#	      skim_support=yes)
 
 AM_CONDITIONAL(SCIM_BUILD_SKIM_SETUP, [test "$skim_support" = "yes"])
 

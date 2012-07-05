@@ -34,9 +34,10 @@ EXTRA_DIST = \
 
 ## @end 1
 
-if SCIM_HANGUL_ENABLE_SKIM_SUPPORT
-SKIM_SUBDIR=skim
-endif
+# Temporarily disable to skim module
+#if SCIM_HANGUL_ENABLE_SKIM_SUPPORT
+#SKIM_SUBDIR=skim
+#endif
 
 AUTOMAKE_OPTIONS 	= gnu
 SUBDIRS 		= src data po $(SKIM_SUBDIR)
