@@ -53,8 +53,7 @@ ACLOCAL			= aclocal -I $(ac_aux_dir)
 
 ACLOCAL_AMFLAGS = -I m4
 
-.PHONY: ChangeLog
-
-ChangeLog:
-	svn2cl --include-rev --authors=$(top_srcdir)/developers -f $(top_srcdir)/$@
-
+dist-hook:
+	if test -d .git ; then \
+		git log -name-status --date=iso > $(distdir)/ChangeLog ; \
+	fi
