@@ -228,6 +228,11 @@ static void
 on_default_combo_box_changed         (GtkComboBox *combobox,
                                       gpointer     user_data);
 
+#if GTK_CHECK_VERSION(3, 0, 0)
+#define gtk_hbox_new(a, b)  gtk_box_new(GTK_ORIENTATION_HORIZONTAL, b)
+#define gtk_vbox_new(a, b)  gtk_box_new(GTK_ORIENTATION_VERTICAL, b)
+#endif
+
 #if GTK_CHECK_VERSION(2, 12, 0)
 static GtkWidget *
 create_options_page();
@@ -337,7 +342,7 @@ create_keyboard_page(GtkTooltips *tooltips)
 #endif
     gtk_box_pack_start(GTK_BOX(vbox2), combo_box, FALSE, TRUE, 0);
 
-    int n = hangul_ic_get_n_keyboards();
+    unsigned int n = hangul_ic_get_n_keyboards();
     for (i = 0; i < n; i++) {
 	const char* name = hangul_ic_get_keyboard_name(i);
 #if GTK_CHECK_VERSION(2, 24, 0)

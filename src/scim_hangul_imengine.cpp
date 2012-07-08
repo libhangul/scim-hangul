@@ -552,7 +552,7 @@ HangulInstance::select_candidate (unsigned int index)
 	    m_surrounding_text.erase(0, candidate.length());
 	} else if (candidate.length() <= m_surrounding_text.length() + preedit.length()) {
 	    len = candidate.length() - m_surrounding_text.length();
-	    if (len > m_preedit.length()) {
+	    if (len > (int)m_preedit.length()) {
 		m_preedit.clear();
 		hangul_ic_reset(m_hic);
 	    } else {
