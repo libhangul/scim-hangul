@@ -20,10 +20,10 @@ Install SCIM
     See this URL: http://www.scim-im.org/
 
 Download libhangul
-    You need libhangul 0.0.3 or newer to build scim-hangul 0.3.0. You can
+    You need libhangul 0.0.12 or newer to build scim-hangul 0.4.0. You can
     download libhangul here:
-    Project page: http://kldp.net/projects/hangul/
-    Download page: http://kldp.net/frs/?group_id=362
+    Project page: http://code.google.com/p/libhangul/
+    Download page: http://code.google.com/p/libhangul/downloads/list
 
 Build libhangul and install
     Follow this commands:

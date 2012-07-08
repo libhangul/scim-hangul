@@ -1,3 +1,6 @@
+scim-hangul 0.4.0
+    * Support GTK+ 3
+
 scim-hangul 0.3.2
     * add symbol input feature
     * add dutch translation from Ronald Stroethoff <stroet43 (at) zonnet.nl>
