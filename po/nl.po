@@ -6,64 +6,31 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nl\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-27 16:19+0900\n"
+"Report-Msgid-Bugs-To: choe.hwanjing@gmail.com\n"
+"POT-Creation-Date: 2012-07-08 22:07+0900\n"
 "PO-Revision-Date: 2010-01-01 21:10+0100\n"
 "Last-Translator: Ronald Stroethoff <stroet43@zonnet.nl>\n"
 "Language-Team: Dutch <kde-i18n-doc@lists.kde.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: src/scim_hangul_imengine.cpp:124 src/scim_hangul_imengine.cpp:928
-#: src/scim_hangul_imengine_setup.cpp:299
-msgid "2bul"
-msgstr "2bul"
-
-#: src/scim_hangul_imengine.cpp:125 src/scim_hangul_imengine.cpp:930
-#: src/scim_hangul_imengine_setup.cpp:300
-msgid "3bul 2bul-shifted"
-msgstr "3bul (2bul met omschakeltoets)"
-
-#: src/scim_hangul_imengine.cpp:126 src/scim_hangul_imengine.cpp:932
-#: src/scim_hangul_imengine_setup.cpp:301
-msgid "3bul Final"
-msgstr "3bul eind versie"
-
-#: src/scim_hangul_imengine.cpp:127 src/scim_hangul_imengine.cpp:934
-#: src/scim_hangul_imengine_setup.cpp:302
-msgid "3bul 390"
-msgstr "3bul 390"
-
-#: src/scim_hangul_imengine.cpp:128 src/scim_hangul_imengine.cpp:936
-#: src/scim_hangul_imengine_setup.cpp:303
-msgid "3bul No-Shift"
-msgstr "3bul zonder omschakeltoets"
-
-#: src/scim_hangul_imengine.cpp:129 src/scim_hangul_imengine.cpp:938
-#: src/scim_hangul_imengine_setup.cpp:304
-msgid "3bul Yetgeul"
-msgstr "3bul traditioneel"
-
-#: src/scim_hangul_imengine.cpp:130 src/scim_hangul_imengine.cpp:940
-msgid "Romaja"
-msgstr "Romaja"
-
-#: src/scim_hangul_imengine.cpp:153
+#: src/scim_hangul_imengine.cpp:127
 msgid "Korean"
 msgstr "Koreaans"
 
-#: src/scim_hangul_imengine.cpp:196
+#: src/scim_hangul_imengine.cpp:170
 msgid "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
 msgstr "Copyright (C) 2006 Choe Hwanjin <choe.hwanjin@gmail.com>"
 
-#: src/scim_hangul_imengine.cpp:209
+#: src/scim_hangul_imengine.cpp:183
 msgid "Key bindings:\n"
 msgstr "sneltoetsen:\n"
 
-#: src/scim_hangul_imengine.cpp:220
+#: src/scim_hangul_imengine.cpp:194
 #, c-format
 msgid ""
 "  Hangul key: %s\n"
@@ -74,37 +41,37 @@ msgstr ""
 "    Deze sneltoets schakelt de invoermethode tussen de ASCII-invoer en "
 "Hangul-invoer.\n"
 
-#: src/scim_hangul_imengine.cpp:224
+#: src/scim_hangul_imengine.cpp:198
 #, c-format
 msgid ""
 "  Hanja key: %s\n"
 "    This key binding is to convert a hangul character to a hanja character.\n"
 msgstr ""
 "  Hanja sneltoets: %s\n"
-"    Met deze toets wordt een Hangul karakter omgezet naar een Hanja karakter."
-"\n"
+"    Met deze toets wordt een Hangul karakter omgezet naar een Hanja "
+"karakter.\n"
 
-#: src/scim_hangul_imengine.cpp:966
+#: src/scim_hangul_imengine.cpp:883
 msgid "Hanja Lock"
 msgstr "Hanja vergrendeling"
 
-#: src/scim_hangul_imengine_setup.cpp:112
+#: src/scim_hangul_imengine_setup.cpp:114
 msgid "Hangul"
 msgstr "Hangul"
 
-#: src/scim_hangul_imengine_setup.cpp:117
+#: src/scim_hangul_imengine_setup.cpp:119
 msgid "A Hangul IMEngine Module."
 msgstr "Een Hangul invoer methode."
 
-#: src/scim_hangul_imengine_setup.cpp:161
+#: src/scim_hangul_imengine_setup.cpp:163
 msgid "Hangul keys:"
 msgstr "Hangul sneltoets:"
 
-#: src/scim_hangul_imengine_setup.cpp:163
+#: src/scim_hangul_imengine_setup.cpp:165
 msgid "Select Hangul keys"
 msgstr "Kies Hangul sneltoets"
 
-#: src/scim_hangul_imengine_setup.cpp:165
+#: src/scim_hangul_imengine_setup.cpp:167
 msgid ""
 "The key events to change input mode between hangul and ascii.Click on the "
 "button on the right to edit it."
@@ -112,15 +79,15 @@ msgstr ""
 "De toetscombinatie, waarmee de invoer-methode tussen Hangul en ASCII wordt "
 "geschakeld. Klik om te veranderen op de rechter muisknop."
 
-#: src/scim_hangul_imengine_setup.cpp:179
+#: src/scim_hangul_imengine_setup.cpp:181
 msgid "Hangul to Hanja keys:"
 msgstr "Hangul naar Hanja:"
 
-#: src/scim_hangul_imengine_setup.cpp:181
+#: src/scim_hangul_imengine_setup.cpp:183
 msgid "Select Hangul to Hanja keys"
 msgstr "Kies de sneltoets, om van Hangul naar Hanja om te zetten"
 
-#: src/scim_hangul_imengine_setup.cpp:183
+#: src/scim_hangul_imengine_setup.cpp:185
 msgid ""
 "The key events to convert Hangul to Hanja character. Click on the button on "
 "the right to edit it."
@@ -128,15 +95,15 @@ msgstr ""
 "De toetscombinatie, waarmee de Hangul-tekens in Hanja (Chinese karakters) "
 "omgezet worden. Klik om te veranderen op de rechter muisknop."
 
-#: src/scim_hangul_imengine_setup.cpp:197
+#: src/scim_hangul_imengine_setup.cpp:199
 msgid "Hanja Lock keys:"
 msgstr "Hanja vergrendel toetsen:"
 
-#: src/scim_hangul_imengine_setup.cpp:199
+#: src/scim_hangul_imengine_setup.cpp:201
 msgid "Select a key to toggle hanja mode keys"
 msgstr "Kies de toetscombinatie voor de Hanja-modus"
 
-#: src/scim_hangul_imengine_setup.cpp:201
+#: src/scim_hangul_imengine_setup.cpp:203
 msgid ""
 "The key events to toggle Hanja mode. Click on the button on the right to "
 "edit it."
@@ -144,45 +111,68 @@ msgstr ""
 "De toetscombinatie voor de Hanja-modus. Klik om te veranderen op de rechter "
 "muisknop."
 
-#: src/scim_hangul_imengine_setup.cpp:245
+#: src/scim_hangul_imengine_setup.cpp:265
 msgid "_Use ascii input mode"
 msgstr "ASCII invoer methode gebruiken"
 
-#: src/scim_hangul_imengine_setup.cpp:248
+#: src/scim_hangul_imengine_setup.cpp:269
+#: src/scim_hangul_imengine_setup.cpp:273
 msgid ""
 "Whether to enable to change the input mode between hangul and ascii mode."
 msgstr "De invoermethode omschakelen tussen Hangul en ASCII AAN/UIT."
 
-#: src/scim_hangul_imengine_setup.cpp:254
+#: src/scim_hangul_imengine_setup.cpp:280
 msgid "_Show candidate comment"
 msgstr "_Toon commentaar over de kandidaten"
 
-#: src/scim_hangul_imengine_setup.cpp:257
+#: src/scim_hangul_imengine_setup.cpp:284
+#: src/scim_hangul_imengine_setup.cpp:287
 msgid "Whether to show the comment of candidates or not."
 msgstr ""
 "Wanneer deze optie is gekozen, wordt commentaar over de kandiaten getoond."
 
-#: src/scim_hangul_imengine_setup.cpp:262
+#: src/scim_hangul_imengine_setup.cpp:293
 msgid "_Commit by word"
 msgstr "hele woorden versturen (_C)"
 
-#: src/scim_hangul_imengine_setup.cpp:265
+#: src/scim_hangul_imengine_setup.cpp:297
+#: src/scim_hangul_imengine_setup.cpp:300
 msgid "Whether not to commit until any non-hangul character is inputed."
 msgstr "Versturen totadat een niet-Hangul karakter is ingevoerd."
 
-#: src/scim_hangul_imengine_setup.cpp:285
+#: src/scim_hangul_imengine_setup.cpp:326
 msgid "<span weight=\"bold\">Keyboard layout</span>"
 msgstr "<span weight=\"bold\">Toetsenbord indeling</span>"
 
-#: src/scim_hangul_imengine_setup.cpp:314
+#: src/scim_hangul_imengine_setup.cpp:363
 msgid "<span weight=\"bold\">Key bindings</span>"
 msgstr "<span weight=\"bold\">Sneltoetsen</span>"
 
-#: src/scim_hangul_imengine_setup.cpp:380
+#: src/scim_hangul_imengine_setup.cpp:440
 msgid "Keyboard"
 msgstr "toetsenbord"
 
-#: src/scim_hangul_imengine_setup.cpp:385
+#: src/scim_hangul_imengine_setup.cpp:449
 msgid "Options"
 msgstr "Voorkeuren"
 
+#~ msgid "2bul"
+#~ msgstr "2bul"
+
+#~ msgid "3bul 2bul-shifted"
+#~ msgstr "3bul (2bul met omschakeltoets)"
+
+#~ msgid "3bul Final"
+#~ msgstr "3bul eind versie"
+
+#~ msgid "3bul 390"
+#~ msgstr "3bul 390"
+
+#~ msgid "3bul No-Shift"
+#~ msgstr "3bul zonder omschakeltoets"
+
+#~ msgid "3bul Yetgeul"
+#~ msgstr "3bul traditioneel"
+
+#~ msgid "Romaja"
+#~ msgstr "Romaja"
