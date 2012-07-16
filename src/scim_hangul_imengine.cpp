@@ -34,6 +34,7 @@
 #endif
 
 #include <cstring>
+#include <unistd.h>
 #include <scim.h>
 #include "scim_hangul_imengine.h"
 
