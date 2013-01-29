@@ -157,6 +157,9 @@ HangulFactory::~HangulFactory ()
     m_reload_signal_connection.disconnect();
     if (m_hanja_table != NULL)
 	hanja_table_delete(m_hanja_table);
+
+    if (m_symbol_table != NULL)
+	hanja_table_delete(m_symbol_table);
 }
 
 WideString
