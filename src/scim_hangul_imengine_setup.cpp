@@ -77,7 +77,7 @@ using namespace scim;
 #define SCIM_CONFIG_HANJA_MODE_KEY         "/IMEngine/Hangul/HanjaModeKey"
 #define SCIM_CONFIG_USE_ASCII_MODE         "/IMEngine/Hangul/UseAsciiMode"
 #define SCIM_CONFIG_COMMIT_BY_WORD         "/IMEngine/Hangul/CommitByWord"
-
+#define SCIM_CONFIG_AUTO_REORDER           "/IMEngine/Hangul/AutoReorder"
 
 static GtkWidget * create_setup_window ();
 static void        load_config (const ConfigPointer &config);
@@ -151,6 +151,7 @@ static GtkWidget *keyboard_layout_combo = NULL;
 static GtkWidget *use_ascii_mode_button = NULL;
 static GtkWidget *commit_by_word_button = NULL;
 static GtkWidget *show_candidate_comment_button = NULL;
+static GtkWidget *auto_reorder_button = NULL;
 
 static bool __have_changed                 = false;
 
@@ -302,6 +303,20 @@ create_options_page(GtkTooltips *tooltips)
     g_signal_connect(G_OBJECT(button), "toggled",
                      G_CALLBACK(on_default_toggle_button_toggled), NULL);
     commit_by_word_button = button;
+
+    /* Automatic reorder */
+    button = gtk_check_button_new_with_mnemonic (_("Automatic _reordering"));
+    gtk_box_pack_start(GTK_BOX(vbox), button, FALSE, FALSE, 0);
+#if GTK_CHECK_VERSION(2, 12, 0)
+    gtk_widget_set_tooltip_text(button,
+            _("Whether to reorder jamo automatically, if they are in wrong order."));
+#else
+    gtk_tooltips_set_tip(tooltips, button,
+            _("Whether to reorder jamo automatically, if they are in wrong order."));
+#endif
+    g_signal_connect(G_OBJECT(button), "toggled",
+                     G_CALLBACK(on_default_toggle_button_toggled), NULL);
+    auto_reorder_button = button;
 
     return vbox;
 }
@@ -494,6 +509,10 @@ load_config (const ConfigPointer &config)
     stat = config->read(String(SCIM_CONFIG_COMMIT_BY_WORD), false);
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(commit_by_word_button), stat);
 
+    // Automatic reordering mode
+    stat = config->read(String(SCIM_CONFIG_AUTO_REORDER), true);
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(auto_reorder_button), stat);
+
     __have_changed = false;
 }
 
@@ -526,6 +545,10 @@ save_config (const ConfigPointer &config)
     // commit by word or not
     stat = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(commit_by_word_button));
     config->write(String(SCIM_CONFIG_COMMIT_BY_WORD), (bool)stat);
+
+    // Automatic reordering mode
+    stat = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(auto_reorder_button));
+    config->write(String(SCIM_CONFIG_AUTO_REORDER), (bool)stat);
 
     __have_changed = false;
 }

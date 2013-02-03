@@ -67,6 +67,7 @@
 #define SCIM_CONFIG_USE_ASCII_MODE              SCIM_CONFIG_PREFIX "/UseAsciiMode"
 #define SCIM_CONFIG_COMMIT_BY_WORD              SCIM_CONFIG_PREFIX "/CommitByWord"
 #define SCIM_CONFIG_HANJA_MODE                  SCIM_CONFIG_PREFIX "/HanjaMode"
+#define SCIM_CONFIG_AUTO_REORDER                SCIM_CONFIG_PREFIX "/AutoReorder"
 
 #define SCIM_CONFIG_PANEL_LOOKUP_TABLE_VERTICAL "/Panel/Gtk/LookupTableVertical"
 
@@ -131,6 +132,7 @@ HangulFactory::HangulFactory (const ConfigPointer &config)
     m_show_candidate_comment = true;
     m_use_ascii_mode = false;
     m_commit_by_word = false;
+    m_auto_reorder = true;
 
     m_hanja_table = hanja_table_load(NULL);
     m_symbol_table = NULL;
@@ -236,6 +238,8 @@ HangulFactory::reload_config(const ConfigPointer &config)
 				    false);
     m_hanja_mode = config->read(String(SCIM_CONFIG_HANJA_MODE),
 				    false);
+    m_auto_reorder = config->read(String(SCIM_CONFIG_AUTO_REORDER),
+                                    true);
 
     String str;
     str = config->read(String(SCIM_CONFIG_HANGUL_KEY),
@@ -270,6 +274,7 @@ HangulInstance::HangulInstance (HangulFactory *factory,
       m_output_mode (OUTPUT_MODE_SYLLABLE)
 {
     m_hic = hangul_ic_new(factory->m_keyboard_layout.c_str());
+    hangul_ic_connect_callback (m_hic, "transition", (void *)on_transition, this);
 
     char label[16];
     std::vector <WideString> labels;
@@ -890,4 +895,27 @@ HangulInstance::register_all_properties()
     register_properties(proplist);
 }
 
-//vim: ts=4:nowrap:ai:expandtab:
+bool
+HangulInstance::on_transition (HangulInputContext     *hic,
+                               ucschar                 c,
+                               const ucschar          *preedit,
+                               void                   *data)
+{
+    HangulInstance *self = reinterpret_cast<HangulInstance*>(data);
+
+    if (!self->m_factory->m_auto_reorder) {
+        if (hangul_is_choseong (c)) {
+            if (hangul_ic_has_jungseong (hic) || hangul_ic_has_jongseong (hic))
+                return false;
+        }
+
+        if (hangul_is_jungseong (c)) {
+            if (hangul_ic_has_jongseong (hic))
+                return false;
+        }
+    }
+
+    return true;
+}
+
+// vim: sts=4 sw=4 nowrap ai expandtab

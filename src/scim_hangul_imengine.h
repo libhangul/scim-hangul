@@ -61,6 +61,7 @@ class HangulFactory : public IMEngineFactoryBase
     bool                     m_use_ascii_mode;
     bool                     m_commit_by_word;
     bool                     m_hanja_mode;
+    bool                     m_auto_reorder;
 
     KeyEventList             m_hangul_keys;
     KeyEventList             m_hanja_keys;
@@ -193,6 +194,12 @@ private:
 
     /* match key event */
     bool   match_key_event (const KeyEventList &keys, const KeyEvent &key) const;
+
+    /* callback from libhangul */
+    static bool on_transition (HangulInputContext *hic,
+                               ucschar c,
+                               const ucschar *preedit,
+                               void *data);
 };
 #endif
 
