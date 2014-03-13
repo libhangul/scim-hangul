@@ -291,6 +291,10 @@ HangulInstance::HangulInstance (HangulFactory *factory,
 
 HangulInstance::~HangulInstance ()
 {
+    if (m_hic != NULL) {
+        hangul_ic_delete(m_hic);
+        m_hic = NULL;
+    }
 }
 
 bool
